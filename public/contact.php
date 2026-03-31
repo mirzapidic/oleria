@@ -27,7 +27,7 @@ require __DIR__ . '/phpmailer/src/src/Exception.php';
 
 $mail = new PHPMailer(true);
 
-$ini = parse_ini_file(__DIR__ . '/../.env-oleria');
+$ini = parse_ini_file(__DIR__ . '/../.env');
 
 try {
     // SMTP config (Google Workspace)
