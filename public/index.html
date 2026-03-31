@@ -1106,9 +1106,9 @@
 
 <body>
     <nav>
-        <div class="logo">
+        <a href="#hero" class="logo">
             <img src="assets/horizontal_logo_small.png" alt="Oleria Logo">
-        </div>
+        </a>
         <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" title="Navigation">
             <i data-feather="menu"></i>
         </button>
@@ -1121,7 +1121,7 @@
             <li><a href="#contact">Kontakt</a></li>
         </ul>
     </nav>
-    <header>
+    <header id="hero">
         <div class="hero-shell">
             <div class="hero-copy">
                 <h1>Diskret. Nachvollziehbar. Verlässlich.</h1>
@@ -1519,7 +1519,7 @@
             rootMargin: '-40% 0px -45% 0px',
             threshold: 0
         });
-        document.querySelectorAll('section[id]').forEach(section => sectionObserver.observe(section));
+        document.querySelectorAll('section[id], header[id]').forEach(section => sectionObserver.observe(section));
 
         // Mobile menu toggle
         const menuToggle = document.querySelector('.menu-toggle');
