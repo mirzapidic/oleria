@@ -1439,7 +1439,7 @@
                     </div>
                     <div class="form-group">
                         <label for="phone">Telefon *</label>
-                        <input type="tel" id="phone" name="phone" required placeholder="+43 660 0000000">
+                        <input type="tel" id="phone" name="phone" required placeholder="+43 660 0000000" pattern="^[0-9+()./\s-]{6,20}$">
                     </div>
                 </div>
                 <div class="form-group">
@@ -1619,6 +1619,22 @@
             successModal.setAttribute('aria-hidden', 'true');
         }
 
+        function startLoadingAnimation(button, baseText = 'Wird gesendet') {
+            let dots = 0;
+            const interval = setInterval(() => {
+                dots = (dots + 1) % 4; // 0 → 3
+                button.textContent = baseText + ' ' + '.'.repeat(dots);
+            }, 300);
+
+            return interval;
+        }
+
+        function stopLoadingAnimation(interval, button, defaultText) {
+            clearInterval(interval);
+            button.textContent = defaultText;
+        }
+
+        const MIN_LOADING_TIME = 2000;
         form.addEventListener('submit', async function (e) {
             e.preventDefault();
             formError.textContent = '';
@@ -1626,20 +1642,42 @@
             if (!form.reportValidity()) return;
 
             submitBtn.disabled = true;
-            submitBtn.textContent = 'Wird gesendet …';
+            const defaultButtonText = submitBtn.textContent;
+            const loadingAnimation = startLoadingAnimation(submitBtn);
 
             try {
                 const formData = new FormData(form);
-                const response = await fetch('/contact.php', {
+                const requestPromise = fetch('/contact.php', {
                     method: 'POST',
                     body: formData
                 });
+                const delayPromise = new Promise(resolve =>
+                    setTimeout(resolve, MIN_LOADING_TIME)
+                );
+                const [responseResult] = await Promise.all([
+                    requestPromise.then(
+                        response => ({ ok: true, response }),
+                        error => ({ ok: false, error })
+                    ),
+                    delayPromise
+                ]);
+
+                if (!responseResult.ok) {
+                    throw responseResult.error;
+                }
+
+                const response = responseResult.response;
+                const result = await response.json();
+
+                if (response.status === 422) {
+                    formError.textContent = result.error || 'Bitte prüfen Sie Ihre Eingaben.';
+                    return;
+                }
 
                 if (!response.ok) {
                     throw new Error('Server error');
                 }
 
-                const result = await response.json();
                 if (result.success) {
                     form.reset();
                     showSuccessModal();
@@ -1650,7 +1688,7 @@
                 formError.textContent = 'Beim Senden ist ein Problem aufgetreten. Bitte versuchen Sie es in wenigen Augenblicken erneut.';
             } finally {
                 submitBtn.disabled = false;
-                submitBtn.textContent = 'Unverbindliche Beratung anfragen';
+                stopLoadingAnimation(loadingAnimation, submitBtn, defaultButtonText);
             }
         });
 
@@ -1667,7 +1705,6 @@
                     this.setCustomValidity("Bitte geben Sie eine gültige Telefonnummer ein.");
                 }
             });
-
             field.addEventListener("input", function () {
                 this.setCustomValidity("");
                 formError.textContent = '';
