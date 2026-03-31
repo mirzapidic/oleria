@@ -34,6 +34,6 @@ RECEIVER=[your@email.com](mailto:your@email.com)
 # Build everything, and copy files to the app public folder
 git pull
 composer install --no-dev --optimize-autoloader
-sudo rsync -av --delete ~/oleria/ /var/www/oleria/
+sudo rsync -av --delete --exclude='.env' ~/oleria/ /var/www/oleria/
 sudo find /var/www/oleria -type d -exec chmod 755 {} \;
 sudo find /var/www/oleria -type f -exec chmod 644 {} \;
