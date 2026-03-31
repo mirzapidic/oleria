@@ -1,0 +1,1414 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oleria | Premium Büroreinigung in Graz</title>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+    <style>
+        :root {
+            --nav-height: 3.5rem;
+        }
+
+        body {
+            font-family: Inter, Roboto, "Open Sans", Arial, sans-serif;
+            color: #0f2a44;
+            background-color: #f8f5f2;
+            margin: 0;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            padding-top: var(--nav-height);
+        }
+
+        /*
+        ################################
+        General
+        ################################
+        */
+        h1, h2, h3 { margin: 0 0 1rem 0; }
+        h1 { font-size: 3rem; line-height: 1.05; }
+        h2 { font-size: 2rem; }
+        h3 { font-size: 1.25rem; }
+        h1 { font-weight: 900; }
+
+
+        .text-white, .text-white * { color: white; }
+        .btn {
+            text-decoration: none;
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 30px;
+            color: #fff;
+            font-weight: 600;
+            transition: 0.25s;
+            cursor: pointer;
+        }
+        section { scroll-margin-top: 3rem; }
+        .btn:hover { transform: translateY(-2px); }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            max-width: 80%;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+
+        /* ##### mobile ##### */
+        @media (max-width: 1100px) {
+            .container { max-width: 90%; }
+        }
+        @media (max-width: 900px) {
+            h1 { font-size: 2.3rem; }
+            h2 { font-size: 1.6rem; }
+            h3 { font-size: 1.05rem; }
+        }
+        @media (max-width: 480px) {
+            h1 { font-size: 1.7rem; }
+            .container { max-width: 96%; padding: 0 8px; }
+            .btn { padding: 0.65rem 1.1rem; }
+        }
+
+        /*
+        ################################
+        Navbar
+        ################################
+        */
+        nav {
+            height: var(--nav-height);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255,255,255);
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 6%;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+            z-index: 999;
+            box-sizing: border-box;
+        }
+        .logo img {
+            max-height: 2rem;
+            width: auto;
+            display: block;
+        }
+        nav .logo { display: flex; align-items: center; max-height: 50%; }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+        }
+        nav ul li { margin: 0; }
+        nav ul li a {
+            display: inline-block;
+            text-decoration: none;
+            color: #0a2540;
+            font-weight: 500;
+            transition: transform 0.2s ease, color 0.2s ease;
+        }
+        nav ul li a:hover { transform: scale(1.05); color: #0a7d86; }
+
+        /* ##### mobile ##### */
+        .menu-toggle {
+            display: none;
+            cursor: pointer;
+            background: transparent;
+            border: none;
+            padding: 0.4rem;
+            border-radius: 8px;
+        }
+        .menu-toggle:focus { outline: 2px solid rgba(10,37,64,0.12); }
+        @media (max-width: 900px) {
+            nav { padding: 1rem 4%; }
+            .menu-toggle { display: block; }
+            nav ul {
+                position: absolute;
+                top: 100%;
+                right: 4%;
+                background: white;
+                flex-direction: column;
+                align-items: flex-start;
+                width: calc(90% - 8%);
+                padding: 1rem;
+                gap: 0.75rem;
+                border-radius: 0.8rem;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+                transform-origin: top right;
+                transform: translateY(-10px) scale(0.98);
+                opacity: 0;
+                pointer-events: none;
+                transition: all 0.28s cubic-bezier(.2,.9,.2,1);
+            }
+            nav ul.open {
+                transform: translateY(0) scale(1);
+                opacity: 1;
+                pointer-events: all;
+            }
+            nav ul li a { padding: 0.5rem 0.25rem; width: 100%; }
+        }
+
+        /*
+        ################################
+        Hero
+        ################################
+        */
+        header {
+            height: calc(100vh - var(--nav-height));
+            height: calc(100dvh - var(--nav-height));
+            background:
+                radial-gradient(circle at top left, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0) 35%),
+                linear-gradient(135deg, #f8f5f2 0%, #eef3f5 55%, #e3edf0 100%);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+        }
+        .hero-shell {
+            width: 100%;
+            max-width: 1320px;
+            margin: 0 auto;
+            padding: 0 6%;
+            box-sizing: border-box;
+            display: grid;
+            grid-template-columns: 1.05fr 0.95fr;
+            gap: 3.5rem;
+            align-items: center;
+        }
+        .hero-copy {
+            text-align: left;
+            max-width: 700px;
+            position: relative;
+            z-index: 2;
+        }
+        .hero-copy h1 {
+            z-index: 2;
+            position: relative;
+        }
+        .hero-copy p {
+            color: rgba(11,35,66,0.82);
+            margin-bottom: 2rem;
+            position: relative;
+            z-index: 2;
+            transition: 0.3s;
+            max-width: 560px;
+        }
+        .hero-subline {
+            font-size: 2.35rem;
+            line-height: 1.15;
+            color: #18324f;
+        }
+        .hero-qualifier {
+            font-size: 1.3rem;
+            color: rgba(11,35,66,0.72);
+            margin-bottom: 2.2rem;
+        }
+        .hero-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .header-btn {
+            background: linear-gradient(90deg,#0f2a44,#173a5c);
+            box-shadow: 0 10px 24px rgba(15,42,68,0.16);
+        }
+        .header-btn:hover { background: linear-gradient(90deg,#173a5c,#224769); }
+        .hero-visual {
+            position: relative;
+            z-index: 1;
+        }
+        .hero-photo-card {
+            position: relative;
+            background: rgba(255,255,255,0.55);
+            border: 1px solid rgba(255,255,255,0.8);
+            border-radius: 2rem;
+            padding: 0.9rem;
+            box-shadow: 0 25px 60px rgba(9,28,48,0.12);
+            backdrop-filter: blur(8px);
+        }
+        .hero-photo-card img {
+            width: 100%;
+            display: block;
+            border-radius: 1.4rem;
+            object-fit: cover;
+            aspect-ratio: 4 / 5;
+            background: #d8e3e8;
+        }
+
+        /* ##### mobile ##### */
+        @media (max-width: 980px) {
+            header {
+                box-sizing: border-box;
+                padding: 6.5rem 0 3rem 0;
+                background:
+                    linear-gradient(to bottom, rgba(10, 37, 64, 0.25), rgba(10, 37, 64, 0)),
+                    url('group_photo_mobile.png') center center / cover no-repeat;
+                height: calc(100vh - var(--nav-height));
+                height: calc(100dvh - var(--nav-height));
+                min-height: 0;
+                display: flex;
+                align-items: flex-start;
+            }
+            .hero-shell {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                position: relative;
+                z-index: 1;
+                margin-top: 15%;
+            }
+            .hero-copy {
+                text-align: center;
+                max-width: 760px;
+                margin: 0 auto;
+            }
+            .hero-subline { font-size: 2.35rem; }
+            .hero-copy h1,
+            .hero-subline,
+            .hero-copy p,
+            .hero-qualifier { color: #ffffff; }
+            .hero-copy p,
+            .hero-qualifier {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .hero-subline {
+                font-size: 2.3rem;
+            }
+            .hero-qualifier {
+                font-size: 1.8rem;
+                margin-bottom: 2rem;
+            }
+            .hero-actions { justify-content: center; }
+            .hero-visual { display: none; !important;}
+            .header-btn {
+                background: rgba(255, 255, 255, 0.16);
+                border: 1px solid rgba(255, 255, 255, 0.28);
+                box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
+                backdrop-filter: blur(6px);
+            }
+            .header-btn:hover { background: rgba(255, 255, 255, 0.24); }
+        }
+        @media (max-width: 580px) {
+            header { padding: 5rem 0 2.5rem 0; }
+            .hero-shell { padding: 0 4%; }
+            .hero-copy h1 { font-size: 1.95rem; }
+            .hero-subline { font-size: 1.45rem; }
+            .hero-qualifier {
+                font-size: 1rem;
+                margin-bottom: 1.6rem;
+            }
+        }
+        @media (max-width: 400px) and (max-height: 900px) {
+            header { padding: 3rem 0 1.5rem 0; }
+            .hero-copy h1 { font-size: 1.6rem; }
+            .hero-subline { font-size: 1.2rem; }
+            .hero-subline {
+                  font-size: 1.5rem;
+            }
+            .hero-qualifier {
+                font-size: 1.2rem;
+                margin-bottom: 1.5rem;
+            }
+        }
+        @media (max-width: 400px) and (max-height: 700px) {
+            header { padding: 2rem 0 1.3rem 0; }
+            .hero-copy h1 { font-size: 1.4rem; }
+            .hero-subline {
+                  font-size: 1.3rem;
+            }
+            .hero-qualifier {
+                font-size: 1rem;
+                margin-bottom: 1rem;
+            }
+        }
+      
+
+        /*
+        ################################
+        Sections
+        ################################
+        */
+        .section { padding: 6rem 0; }
+        .section-white { background: white; }
+        .section-navy { background: #0a2540; color: white; }
+        .section-parchment { background: #f8f5f2; }
+        .section-parchment-gradient { background: linear-gradient(to bottom, white, #f8f5f2); }
+        .section-blue-gradient { background: linear-gradient(to bottom, #ffffff, #d9ebf2); }
+        .section-subtitle {
+            margin-bottom: 3rem;
+            font-size: 1.05rem;
+            line-height: 1.4rem;
+        }
+        
+        /* ##### mobile ##### */
+        @media (max-width: 900px) {
+            .section { padding: 3.5rem 0; }
+            .section-subtitle { margin: 0 auto 1.25rem auto; max-width: 100%; }
+        }
+        
+        /*
+        ################################
+        Problem Section
+        ################################
+        */
+        .cards {
+            width: 80%;
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .card {
+            background: #f8f5f2;
+            padding: 2rem;
+            border-radius: 1rem;
+            flex: 1;
+            min-width: 260px;
+            max-width: 360px;
+            box-sizing: border-box;
+        }
+        .card-icon {
+            font-size: 2rem;
+            color: #7fd1d3;
+            margin-bottom: 1rem;
+        }
+
+        /* ##### mobile ##### */
+        @media (max-width: 1100px) {
+            .cards { width: 90%; gap: 1rem; }
+        }
+        @media (max-width: 1000px) {
+            .cards {
+                width: 100%;
+                gap: 1rem;
+                flex-wrap: nowrap;
+            }
+            .card {
+                flex: 1 1 0;
+                min-width: 0;
+                max-width: none;
+                padding: 1.25rem;
+            }
+        }
+        @media (max-width: 750px) {
+            .cards {
+                flex-direction: column;
+                flex-wrap: nowrap;
+                width: 100%;
+                align-items: stretch;
+            }
+            .card {
+                width: 100%;
+                max-width: none;
+            }
+        }
+        @media (max-width: 900px) {
+            #problem h2,
+            #problem .section-subtitle,
+            #team h2,
+            #team .section-subtitle {
+                text-align: center;
+            }
+        }
+                
+        /*
+        ################################
+        Offer Section
+        ################################
+        */
+        .offer-bg-section {
+            box-sizing: border-box;
+            position: relative;
+            min-height: calc(100vh - var(--nav-height));;
+            min-height: calc(100dvh - var(--nav-height));;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            background: url('office.png') center/cover no-repeat;
+        }
+        .offer-bg-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(10, 37, 64, 0.78);
+            backdrop-filter: saturate(0.7);
+        }
+        .offer-bg-content {
+            position: relative;
+            z-index: 2;
+            max-width: 50%;
+        }
+        .offer-premise {
+            font-size: 0.9rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.65);
+            margin-bottom: 1rem;
+        }
+        .offer-bg-content h2 {
+            font-size: 2.4rem;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+        .offer-description {
+            font-size: 1.1rem;
+            color: rgba(255,255,255,0.85);
+            margin-bottom: 3rem;
+            line-height: 1.5;
+        }
+        .offer-highlight {
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 1.5rem;
+            padding: 2rem;
+            margin-bottom: 2.5rem;
+            backdrop-filter: blur(6px);
+            text-align: left;
+        }
+        .offer-highlight-title {
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: rgba(255,255,255,0.6);
+            margin-bottom: 1.8rem;
+        }
+        .offer-highlight-items {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2.5rem;
+        }
+        .offer-highlight-item {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .offer-highlight-icon {
+            width: 72px;
+            height: 72px;
+            background: rgba(33,248,246,0.18);
+            border-radius: 1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.2rem;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+        .offer-highlight-icon i {
+            width: 32px;
+            height: 32px;
+            color: #21f8f6;
+        }
+        .offer-highlight-text strong {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 1.05rem;
+        }
+        .offer-highlight-text p {
+            margin: 0;
+            font-size: 0.95rem;
+            color: rgba(255,255,255,0.8);
+            line-height: 1.5;
+        }
+        .offer-closing {
+            font-size: 1rem;
+            color: rgba(255,255,255,0.75);
+            line-height: 1.5;
+        }
+
+        /* ##### mobile ##### */
+        @media (max-width: 900px) {
+            .offer-bg-section {
+                min-height: 130vh;
+                min-height: 130dvh;
+            }
+            .offer-bg-content { max-width: 96%; }
+            .offer-bg-content h2 { font-size: 1.8rem; }
+            .offer-description { font-size: 1rem; }
+            .offer-highlight { padding: 1.5rem; }
+        }
+        @media (max-width: 700px) {
+            .offer-highlight-items {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .offer-highlight-item {
+                align-items: center;
+                text-align: center;
+            }
+            .offer-highlight { text-align: center; }
+            .offer-highlight-icon {
+                width: 64px;
+                height: 64px;
+            }
+            .offer-highlight-icon i {
+                width: 28px;
+                height: 28px;
+            }
+        }
+        @media (max-width: 480px) {
+            .offer-bg-section { min-height: auto; }
+            .offer-bg-content h2 { font-size: 1.5rem; }
+            .offer-description {
+                font-size: 0.95rem;
+                margin-bottom: 2rem;
+            }
+            .offer-highlight-text p { font-size: 0.9rem; }
+        }
+        
+        /*
+        ################################
+        Proof Section
+        ################################
+        */
+        .proof-section { text-align: center; }
+        .proof-flow {
+            margin-top: 4rem;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
+        .proof-step {
+            display: flex;
+            align-items: center;
+            gap: 3rem;
+            text-align: left;
+            max-width: 60%;
+            margin: 0 auto;
+        }
+        .proof-step.reverse { flex-direction: row-reverse; }
+        .proof-text { flex: 1; }
+        .proof-step-number {
+            display: inline-block;
+            font-size: 0.85rem;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.5);
+            margin-bottom: 0.6rem;
+        }
+        .proof-text h3 { margin-bottom: 0.6rem; }
+        .proof-text p {
+            color: rgba(255,255,255,0.8);
+            line-height: 1.5;
+        }
+        .proof-visual { flex: 1; }
+        .proof-image-placeholder {
+            height: 220px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .proof-image-placeholder img {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+            display: block;
+            object-fit: contain;
+        }
+        .proof-connector {
+            width: 2px;
+            height: 30px;
+            background: rgba(255,255,255,0.15);
+            margin: 0 auto;
+        }
+
+        /* ##### mobile ##### */
+        @media (max-width: 900px) {
+            .proof-step {
+                flex-direction: column;
+                text-align: center;
+                gap: 1.5rem;
+            }
+            .proof-step.reverse { flex-direction: column; }
+            .proof-text {
+                max-width: 600px;
+                margin: 0 auto;
+            }
+            .proof-image-placeholder { height: 180px; }
+        }
+        @media (max-width: 480px) {
+            .proof-step {
+                max-width: 80%;
+            }
+            .proof-image-placeholder {
+                height: 150px;
+                font-size: 0.8rem;
+            }
+            .proof-flow { 
+                margin: 1rem auto;
+                gap: 2rem; 
+            }
+        }
+        
+        /*
+        ################################
+        Team Section
+        ################################
+        */
+        .flex-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: center;
+            flex-direction: row;
+        }  
+        .image-wrapper { flex: 1; position: relative; }
+        .image-wrapper img {
+            width: 100%;
+            border-radius: 1rem;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            display: block;
+            height: auto;
+        }
+        .content { flex: 1; }    
+        .feature-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .feature {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+        }
+        .feature-icon-aqua {
+            width: 2rem;
+            height: 2rem;
+            background: rgba(127,209,211,0.18);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #7fd1d3;
+            flex-shrink: 0;
+        }
+        .feature-icon-peach { color: #ffb8a4; }
+
+        /* ##### mobile ##### */
+        @media (max-width: 1000px) {
+            .image-wrapper, .content { width: 100%; }
+            .flex-row { flex-direction: column; }
+            .feature { align-items: center; }
+            .feature div { text-align: left; }
+            .feature-list { gap: 1rem; }
+        } 
+        @media (max-width: 1000px) {
+            #team .content {
+                text-align: center;
+            }
+        }
+        
+        /*
+        ################################
+        FAQ Section
+        ################################
+        */
+        .faq-intro {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+        .faq-list {
+        width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .faq-item {
+            background: #ffffff;
+            border: 1px solid rgba(10, 37, 64, 0.08);
+            border-radius: 1rem;
+            box-shadow: 0 10px 26px rgba(10, 37, 64, 0.04);
+            overflow: hidden;
+            transition: box-shadow 0.25s ease, border-color 0.25s ease;
+        }
+        .faq-item:hover {
+            border-color: rgba(10, 37, 64, 0.14);
+            box-shadow: 0 14px 32px rgba(10, 37, 64, 0.07);
+        }
+        .faq-item summary {
+            list-style: none;
+            cursor: pointer;
+            padding: 1.25rem 1.4rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            font-weight: 600;
+            color: #0a2540;
+            position: relative;
+        }
+        .faq-item summary::-webkit-details-marker { display: none; }
+        .faq-item summary::after {
+            content: "+";
+            flex-shrink: 0;
+            font-size: 1.4rem;
+            line-height: 1;
+            color: #0a7d86;
+            transition: transform 0.2s ease;
+        }
+        .faq-item[open] summary::after { content: "−"; }
+        .faq-item[open] {
+            border-color: rgba(10, 125, 134, 0.18);
+            box-shadow: 0 14px 34px rgba(10, 37, 64, 0.08);
+        }
+        .faq-answer {
+            padding: 0 1.4rem 1.35rem 1.4rem;
+            color: rgba(10, 37, 64, 0.78);
+            line-height: 1.6;
+            font-size: 0.98rem;
+            text-align: left;
+        }
+
+        /* ##### mobile ##### */
+        @media (max-width: 900px) {
+            .faq-intro { margin-bottom: 1.75rem; }
+            .faq-item summary {
+                padding: 1.1rem 1.1rem;
+                font-size: 0.98rem;
+            }
+            .faq-answer {
+                padding: 0 1.1rem 1.15rem 1.1rem;
+                font-size: 0.95rem;
+            }
+        }
+        @media (max-width: 480px) {
+            .faq-item summary { align-items: flex-start; }
+            .faq-item summary::after { margin-top: 0.05rem; }
+        }
+    
+        /*
+        ################################
+        CTA Section
+        ################################
+        */
+        .closing-contact-section { text-align: center; }
+        .closing-contact-intro {
+            max-width: 620px;
+            margin: 0 auto 2rem auto;
+            font-size: 1.05rem;
+            color: rgba(10,37,64,0.78);
+            line-height: 1.6;
+        }
+        .closing-contact-subtitle {
+            max-width: 640px;
+            margin: 0 auto 2rem auto;
+        }
+        .closing-highlight {
+            max-width: 620px;
+            margin: 0 auto 1.5rem auto;
+            text-align: left;
+            background: rgba(255,255,255,0.65);
+            border: 1px solid rgba(10,37,64,0.08);
+            border-radius: 1.2rem;
+            padding: 1.4rem 1.5rem;
+            box-shadow: 0 10px 24px rgba(10,37,64,0.05);
+        }
+        .closing-highlight strong {
+            display: block;
+            margin-bottom: 0.4rem;
+            font-size: 1rem;
+            color: #0a2540;
+        }
+        .closing-highlight p {
+            margin: 0;
+            font-size: 0.95rem;
+            line-height: 1.5;
+            color: rgba(10,37,64,0.78);
+        }
+        .closing-note {
+            font-size: 0.95rem;
+            color: rgba(10, 37, 64, 0.62);
+            margin: 1rem 0 0 0;
+        }
+        form {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 1.5rem;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+            width: 100%;
+            max-width: 720px;
+            box-sizing: border-box;
+        }
+        .form-row {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        .form-group {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1rem;
+        }
+        label {
+            font-weight: 500;
+            color: rgba(10,37,64,0.7);
+            margin-bottom: 0.25rem;
+            font-size: 0.95rem;
+        }
+        input, textarea {
+            padding: 0.75rem;
+            border-radius: 0.5rem;
+            border: 1px solid rgba(10,37,64,0.12);
+            outline: none;
+            transition: all 0.2s;
+            font-size: 0.95rem;
+        }
+        input:focus, textarea:focus {
+            border-color: #7fd1d3;
+            box-shadow: 0 0 0 6px rgba(127,209,211,0.08);
+        }
+        .form-btn {
+            background: #0a2540;
+            padding: 0.8rem 1.4rem;
+            border-radius: 12px;
+        }
+        .form-btn:hover { background: #123a6d; }
+
+        /* ##### mobile ##### */
+        @media (max-width: 480px) {
+            .closing-highlight { padding: 1.2rem; }
+        }
+
+        /*
+        ################################
+        Footer
+        ################################
+        */
+        .footer {
+            background: #0a2540;
+            color: white;
+            padding: 48px 20px 0 20px;
+        }
+        .footer-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 3rem;
+        }
+        .footer-column {
+            width: 320px;
+            flex-shrink: 0;
+        }
+        .footer-column-content { max-width: 100%; }
+        .footer-column h4 {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+            color: #7fd1d3;
+        }
+        .footer-link {
+            text-decoration: none;
+            color: #7fd1d3;
+            font-weight: 500;
+            transition: 0.2s;
+        }
+        .footer-link:hover { font-weight: 550; }
+        .footer-bottom {
+            text-align: center;
+            border-top: 1px solid rgba(255,255,255,0.15);
+            padding: 1rem 0;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            opacity: 0.85;
+        }
+
+        /* ##### mobile ##### */
+        @media (max-width: 700px) {
+            .footer-container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            .footer-column {
+                width: 100%;
+                max-width: 380px;
+            }
+            .footer-column-content { max-width: 100%; }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="horizontal_logo_small.png" alt="Oleria Logo">
+        </div>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" title="Navigation">
+            <i data-feather="menu"></i>
+        </button>
+        <ul id="main-nav">
+            <li><a href="#problem">Problem</a></li>
+            <li><a href="#offer">Leistung</a></li>
+            <li><a href="#proof">Nachvollziehbarkeit</a></li>
+            <li><a href="#team">Team</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="hero-shell">
+            <div class="hero-copy">
+                <h1>Diskret. Nachvollziehbar. Verlässlich.</h1>
+                <p class="hero-subline">Reinigung, der Sie vertrauen können</p>
+                <p class="hero-qualifier">Büroreinigung für Unternehmen mit höchsten Ansprüchen.</p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn header-btn">Beratung vereinbaren</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-photo-card">
+                    <img src="group_photo_desktop.png" alt="Oleria Team in eleganter Arbeitskleidung">
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="section section-white" id="problem">
+        <div class="container">
+            <h2>Ein gepflegtes Büro ist kein Zufall</h2>
+            <p class="section-subtitle">
+                Ohne klare Abläufe und nachvollziehbare Umsetzung bleibt Qualität oft inkonstant – auch dann, wenn sie eigentlich erwartet wird.
+            </p>
+            <div class="cards" role="list">
+                <div class="card" role="listitem">
+                    <div class="card-icon"><i data-feather="alert-circle"></i></div>
+                    <h3>Unklare Abläufe, schwankende Qualität</h3>
+                    <p>Ohne klare Systeme bleibt unklar, was tatsächlich erledigt wurde. Wechselnde Teams, fehlende Standards und mangelnde Kontrolle führen zu inkonstanten Ergebnissen.</p>
+                </div>
+                <div class="card" role="listitem">
+                    <div class="card-icon"><i data-feather="users"></i></div>
+                    <h3>Zusätzlicher Koordinationsaufwand</h3>
+                    <p>Ohne klare Systeme bleibt unklar, was tatsächlich erledigt wurde. Wechselnde Teams, fehlende Standards und mangelnde Kontrolle führen zu inkonstanten Ergebnissen.</p>
+                </div>
+                <div class="card" role="listitem">
+                    <div class="card-icon"><i data-feather="clock"></i></div>
+                    <h3>Kein konstant professioneller Eindruck</h3>
+                    <p>Ohne klare Systeme bleibt unklar, was tatsächlich erledigt wurde. Wechselnde Teams, fehlende Standards und mangelnde Kontrolle führen zu inkonstanten Ergebnissen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section offer-bg-section" id="offer">
+        <div class="offer-bg-overlay"></div>
+        <div class="container offer-bg-content">
+            <p class="offer-premise">
+                Vollständig betreut, statt laufend organisiert
+            </p>
+            <h2>Ein System, das Ihr Büro vollständig betreut</h2>
+            <p class="offer-description">
+                Neben der regelmäßigen Reinigung übernehmen wir auch die Themen,
+                die sonst zusätzlich geplant, koordiniert und beauftragt werden müssten.
+            </p>
+            <div class="offer-highlight">
+                <div class="offer-highlight-title">
+                    Ein Schritt weiter gedacht
+                </div>
+                <div class="offer-highlight-items">
+                    <div class="offer-highlight-item">
+                        <div class="offer-highlight-icon">
+                            <i data-feather="sun"></i>
+                        </div>
+                        <div class="offer-highlight-text">
+                            <strong>Tiefreinigung über das Jahr eingeplant</strong>
+                            <p>
+                                Teppiche, Möbel, Fenster und schwer erreichbare Bereiche werden
+                                regelmäßig mit berücksichtigt – für ein dauerhaft gepflegtes Gesamtbild.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="offer-highlight-item">
+                        <div class="offer-highlight-icon">
+                            <i data-feather="lock"></i>
+                        </div>
+                        <div class="offer-highlight-text">
+                            <strong>Diskrete Aktenvernichtung inklusive</strong>
+                            <p>
+                                Sensible Dokumente werden bei Bedarf direkt mit übernommen –
+                                ohne zusätzlichen Dienstleister oder Abstimmung.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="offer-closing">
+                Alles läuft in einem klar strukturierten System – damit Sie sich nicht darum kümmern müssen.
+            </p>
+        </div>
+    </section>
+    <section class="section section-navy proof-section text-white" id="proof">
+        <div class="container">
+            <h2>Sie wissen jederzeit, was erledigt wurde</h2>
+            <p class="section-subtitle">
+                Jeder Einsatz wird nicht nur durchgeführt, sondern strukturiert dokumentiert,
+                geprüft und transparent gemacht.
+            </p>
+            <div class="proof-flow">
+                <div class="proof-step">
+                    <div class="proof-text">
+                        <span class="proof-step-number">01</span>
+                        <h3>Durchführung & Dokumentation</h3>
+                        <p>
+                            Jeder Einsatz erfolgt nach klaren Checklisten und wird durch Zeitstempel
+                            sowie Vorher-/Nachher-Dokumentation nachvollziehbar festgehalten.
+                        </p>
+                    </div>
+                    <div class="proof-visual">
+                        <div class="proof-image-placeholder">
+                            <img src="cleaning_event_screenshot.png" alt="Reinigungsereignis Dokumentation">
+                        </div>
+                    </div>
+                </div>
+                <div class="proof-connector"></div>
+                <div class="proof-step reverse">
+                    <div class="proof-text">
+                        <span class="proof-step-number">02</span>
+                        <h3>Kontrolle & Bewertung</h3>
+                        <p>
+                            Regelmäßige Prüfungen und Bewertungen sichern die Qualität dauerhaft ab
+                            und machen Abweichungen sofort sichtbar.
+                        </p>
+                    </div>
+                    <div class="proof-visual">
+                        <div class="proof-image-placeholder">
+                            <img src="inspection_event_screenshot.png" alt="Inspektionsereignis Dokumentation">
+                        </div>
+                    </div>
+                </div>
+                <div class="proof-connector"></div>
+                <div class="proof-step">
+                    <div class="proof-text">
+                        <span class="proof-step-number">03</span>
+                        <h3>Transparente Berichte</h3>
+                        <p>
+                            Sie erhalten eine strukturierte Übersicht aller Einsätze, Ergebnisse und Kontrollen – ohne selbst nachverfolgen zu müssen.
+                        </p>
+                    </div>
+                    <div class="proof-visual">
+                        <div class="proof-image-placeholder">
+                            <img src="client_report_screenshot.png" alt="Kunden Reporting">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-parchment" id="team">
+        <div class="container flex-row">
+            <div class="image-wrapper" aria-hidden="true">
+                <img src="cleaning_team.png" alt="Oleria Team in professioneller Arbeitskleidung">
+            </div>
+            <div class="content">
+                <h2>Ein Team, das Ihrem Anspruch gerecht wird</h2>
+                <p class="section-subtitle">
+                    Hinter unserem System stehen Fachkräfte, die nicht nur reinigen,
+                    sondern Ihr Büro als verantwortlichen Arbeitsbereich verstehen.
+                </p>
+                <div class="feature-list">
+                    <div class="feature">
+                        <div class="feature-icon-peach">
+                            <i data-feather="award"></i>
+                        </div>
+                        <div>
+                            <h3>Umfassend geschult</h3>
+                            <span>
+                                In Reinigungstechnik, Auftreten und diskretem Verhalten –
+                                für ein professionelles Erscheinungsbild im Büroalltag.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon-peach">
+                            <i data-feather="bar-chart-2"></i>
+                        </div>
+                        <div>
+                            <h3>Messbare Leistungsqualität</h3>
+                            <span>
+                                Jede Arbeitsleistung wird kontinuierlich bewertet –
+                                basierend auf Ausführung, Feedback und Kontrollen.
+                                So ist jederzeit klar, wer konstant hohe Qualität liefert.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <div class="feature-icon-peach">
+                            <i data-feather="users"></i>
+                        </div>
+                        <div>
+                            <h3>Konstante Teams</h3>
+                            <span>
+                                Die gleichen Fachkräfte betreuen Ihr Büro dauerhaft –
+                                vertraut mit Ihren Anforderungen und verantwortlich für das Ergebnis.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section section-white " id="faq">
+        <div class="container ">
+            <div class="faq-intro">
+                <h2>Häufige Fragen</h2>
+                <p class="section-subtitle">
+                    Alles, was vor dem Start wichtig ist – klar beantwortet.
+                </p>
+            </div>
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>
+                        <span>Was ist im Service genau enthalten?</span>
+                    </summary>
+                    <div class="faq-answer">
+                        Unser Service umfasst die laufende Büroreinigung im Alltag sowie alle strukturierten Abläufe rundherum:
+                        dokumentierte Einsätze, Qualitätskontrollen, transparente Berichte und – je nach Vereinbarung –
+                        zusätzliche Leistungen wie eingeplante Tiefreinigung und diskrete Aktenvernichtung.
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>
+                        <span>Muss ich die Reinigung laufend koordinieren?</span>
+                    </summary>
+                    <div class="faq-answer">
+                        Nein. Genau dafür ist unser System gedacht. Wir übernehmen Planung, Durchführung,
+                        Kontrolle und Dokumentation, sodass Sie sich nicht laufend um Nachfragen,
+                        Zusatzaufträge oder Erinnerungen kümmern müssen.
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>
+                        <span>Wie schnell kann die Betreuung starten?</span>
+                    </summary>
+                    <div class="faq-answer">
+                        In der Regel innerhalb weniger Tage. Nach einem kurzen Abstimmungsgespräch richten wir
+                        die Abläufe für Ihr Büro ein und starten direkt mit einem strukturierten Beginn –
+                        auf Wunsch inklusive initialer Tiefreinigung.
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>
+                        <span>Gibt es eine langfristige vertragliche Bindung?</span>
+                    </summary>
+                    <div class="faq-answer">
+                        Im ersten Monat arbeiten wir ohne langfristige Bindung. So können Sie unseren Service
+                        im laufenden Betrieb erleben und prüfen, ob er zu Ihrem Büro passt. Erst danach
+                        entscheiden wir gemeinsam über die weitere Zusammenarbeit.
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>
+                        <span>Wie stelle ich sicher, dass die Qualität konstant bleibt?</span>
+                    </summary>
+                    <div class="faq-answer">
+                        Jeder Einsatz wird dokumentiert, kontrolliert und ausgewertet. Zusätzlich arbeiten wir
+                        mit klaren Standards, festen Verantwortlichkeiten und internen Leistungsbewertungen,
+                        sodass Qualität nicht dem Zufall überlassen wird.
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>
+                        <span>Wer hat Zugang zu unseren Räumlichkeiten?</span>
+                    </summary>
+                    <div class="faq-answer">
+                        Ihr Büro wird von sorgfältig ausgewählten und geschulten Fachkräften betreut, die
+                        in Diskretion, Auftreten und Verhalten im Büroalltag trainiert sind. Durch konstante Teams
+                        bleibt der Zugang überschaubar und nachvollziehbar.
+                    </div>
+                </details>
+                <details class="faq-item">
+                    <summary>
+                        <span>Was kostet die Büroreinigung?</span>
+                    </summary>
+                    <div class="faq-answer">
+                        Das hängt von Größe, Nutzung und Anforderungen Ihres Büros ab. Wichtig ist:
+                        Unser Ansatz ist nicht nur auf einzelne Reinigungseinsätze ausgelegt, sondern auf eine
+                        vollständige Betreuung mit klaren Abläufen und geringem Koordinationsaufwand.
+                        Gerne erstellen wir dafür eine individuelle Einschätzung.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+    <section class="section section-blue-gradient closing-contact-section" id="contact">
+        <div class="container closing-contact-container text-center">
+            <h2>Bereit für eine Reinigung, um die Sie sich nicht mehr kümmern müssen?</h2>
+            <p class="closing-contact-intro">
+                In einem kurzen Gespräch klären wir, was für Ihr Büro sinnvoll ist und wie schnell wir starten können.
+            </p>
+            <div class="closing-highlight">
+                <strong>Schnell eingerichtet. Sofort spürbar.</strong>
+                <p>
+                    Ihr Büro wird vollständig eingerichtet und mit einer initialen Tiefreinigung auf den gewünschten Standard gebracht.
+                </p>
+            </div>
+            <div class="closing-highlight">
+                <strong>Sie entscheiden auf Basis Ihrer Erfahrung</strong>
+                <p>
+                    Im ersten Monat lernen Sie unseren Service im Alltag kennen. Erst danach entscheiden Sie über die weitere Zusammenarbeit.
+                </p>
+            </div>
+            <form id="contactForm" novalidate>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Vollständiger Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Max Mustermann">
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Unternehmen *</label>
+                        <input type="text" id="company" name="company" required placeholder="Musterfirma GmbH">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">E-Mail *</label>
+                        <input type="email" id="email" name="email" required placeholder="sie@musterfirma.at">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Telefon *</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="+43 660 0000000">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Sonstige Details</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Fläche, Terminvorschläge, besondere Anforderungen usw."></textarea>
+                </div>
+                <div style="display:flex;justify-content:center;margin-top:1rem;">
+                    <button type="submit" class="btn form-btn">
+                        Unverbindliche Beratung anfragen
+                    </button>
+                </div>
+            </form>
+            <p class="closing-note">
+                Rückmeldung innerhalb von 24 Stunden.
+            </p>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <div class="footer-column-content">
+                    <h4>Impressum</h4>
+                    <p>
+                        Pidic Facility Management GmbH<br>
+                        Neubaugasse 45<br>
+                        GF: Mirzet Pidić<br>
+                        FN 658696x, HG Graz<br>
+                        UID: ATU82518303
+                    </p>
+                </div>
+            </div>
+            <div class="footer-column">
+                <div class="footer-column-content">
+                    <h4>Rechtliches</h4>
+                    <p style="margin-bottom: 0.75rem;">
+                        Personenbezogene Daten werden ausschließlich zur Bearbeitung Ihrer Anfrage verarbeitet.
+                        Diese Website verwendet keine Cookies oder Tracking-Tools.
+                    </p>
+                    <a href="pidic_facility_management_gmbh_agb.pdf" target="_blank" rel="noopener" class="footer-link">
+                        Allgemeine Geschäftsbedingungen
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 Oleria</div>
+    </footer>
+
+    <script>
+        feather.replace();
+
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const mainNav = document.getElementById('main-nav');
+        menuToggle && menuToggle.addEventListener('click', function () {
+            const isOpen = mainNav.classList.toggle('open');
+            menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+            const icon = menuToggle.querySelector('i');
+            if (isOpen) icon.setAttribute('data-feather', 'x'); else icon.setAttribute('data-feather', 'menu');
+            feather.replace();
+        });
+
+        // Close menu when clicking a link (mobile)
+        document.querySelectorAll('#main-nav a').forEach(a => a.addEventListener('click', () => {
+            if (mainNav.classList.contains('open')) {
+                mainNav.classList.remove('open');
+                menuToggle.setAttribute('aria-expanded', 'false');
+                menuToggle.querySelector('i').setAttribute('data-feather', 'menu');
+                feather.replace();
+            }
+        }));
+
+        // Accessibility: close mobile menu on escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && mainNav.classList.contains('open')) {
+                mainNav.classList.remove('open');
+                menuToggle.setAttribute('aria-expanded', 'false');
+                menuToggle.querySelector('i').setAttribute('data-feather', 'menu');
+                feather.replace();
+            }
+        });
+
+        // Smooth scroll for internal anchors
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href').slice(1);
+                const target = document.getElementById(targetId);
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Handle form submit (demo - replace with real endpoint)
+        const form = document.getElementById('contactForm');
+        form.addEventListener('submit', async function (e) {
+            e.preventDefault();
+
+            if (!form.reportValidity()) return;
+
+            const formData = new FormData(form);
+
+            const response = await fetch('/contact.php', {
+                method: 'POST',
+                body: formData
+            });
+
+            const result = await response.json();
+
+            if (result.success) {
+                alert('Danke! Ihre Anfrage wurde übermittelt.');
+                form.reset();
+            }
+        });
+
+        // Form validation messages (accessible custom messages)
+        document.querySelectorAll("input, textarea").forEach(field => {
+            field.addEventListener("invalid", function () {
+                this.setCustomValidity("");
+
+                if (this.validity.valueMissing) {
+                    this.setCustomValidity("Dieses Feld ist erforderlich.");
+                } else if (this.validity.typeMismatch && this.type === "email") {
+                    this.setCustomValidity("Bitte geben Sie eine gültige E-Mail-Adresse ein.");
+                } else if (this.validity.patternMismatch && this.type === "tel") {
+                    this.setCustomValidity("Bitte geben Sie eine gültige Telefonnummer ein.");
+                }
+            });
+
+            field.addEventListener("input", function () {
+                this.setCustomValidity("");
+            });
+        });
+    </script>
+</body>
+</html>
