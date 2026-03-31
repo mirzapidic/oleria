@@ -27,30 +27,13 @@ SMTP_USER=[your@email.com](mailto:your@email.com)
 SMTP_PASS=yourpassword
 RECEIVER=[your@email.com](mailto:your@email.com)
 
-## Contact Form
-
-The contact form sends emails via SMTP using PHPMailer.
-Configuration is loaded from `.env`.
-
-## Security
-
-* Do not commit `.env`
-* Keep it outside the `public/` directory
-* Set proper permissions (e.g. chmod 600)
-* Validate all user input
-
-## Deployment
-
-Upload project files to your server and run:
-
-composer install --no-dev --optimize-autoloader
-
-Ensure your web server points to the `public/` directory.
-
 ## Dependencies
-
 * phpmailer/phpmailer
 
-## License
-
-Private project
+## Deployment
+# Build everything, and copy files to the app public folder
+git pull
+composer install --no-dev --optimize-autoloader
+sudo rsync -av --delete ~/oleria/ /var/www/oleria/
+sudo find /var/www/oleria -type d -exec chmod 755 {} \;
+sudo find /var/www/oleria -type f -exec chmod 644 {} \;
