@@ -163,7 +163,7 @@
         ################################
         */
         header {
-            height: calc(100vh - var(--nav-height));
+            height: calc(100vh - var(--nav-height));  /* backup */
             height: calc(100dvh - var(--nav-height));
             background:
                 radial-gradient(circle at top left, rgba(255,255,255,0.85) 0%, rgba(255,255,255,0) 35%),
@@ -253,7 +253,7 @@
                 background:
                     linear-gradient(to bottom, rgba(10, 37, 64, 0.25), rgba(10, 37, 64, 0)),
                     url('assets/group_photo_mobile.png') center center / cover no-repeat;
-                height: calc(100vh - var(--nav-height));
+                height: calc(100vh - var(--nav-height)); /* backup */
                 height: calc(100dvh - var(--nav-height));
                 min-height: 0;
                 display: flex;
@@ -429,8 +429,8 @@
         .offer-bg-section {
             box-sizing: border-box;
             position: relative;
-            min-height: calc(100vh - var(--nav-height));;
-            min-height: calc(100dvh - var(--nav-height));;
+            min-height: calc(100vh - var(--nav-height));  /* backup */
+            min-height: calc(100dvh - var(--nav-height));
             display: flex;
             align-items: center;
             justify-content: center;
@@ -989,12 +989,12 @@
                 <div class="card" role="listitem">
                     <div class="card-icon"><i data-feather="users"></i></div>
                     <h3>Zusätzlicher Koordinationsaufwand</h3>
-                    <p>Ohne klare Systeme bleibt unklar, was tatsächlich erledigt wurde. Wechselnde Teams, fehlende Standards und mangelnde Kontrolle führen zu inkonstanten Ergebnissen.</p>
+                    <p>Rückfragen, Nachbesserungen und Abstimmungen kosten Zeit und Aufmerksamkeit – und lenken vom eigentlichen Kerngeschäft ab.</p>
                 </div>
                 <div class="card" role="listitem">
                     <div class="card-icon"><i data-feather="clock"></i></div>
                     <h3>Kein konstant professioneller Eindruck</h3>
-                    <p>Ohne klare Systeme bleibt unklar, was tatsächlich erledigt wurde. Wechselnde Teams, fehlende Standards und mangelnde Kontrolle führen zu inkonstanten Ergebnissen.</p>
+                    <p>Ihr Büro ist Teil Ihrer Außenwirkung. Wenn es nicht jederzeit auf einem konstant hohen Niveau ist, entsteht ein Eindruck, der nicht Ihrer tatsächlichen Qualität entspricht.</p>
                 </div>
             </div>
         </div>
@@ -1314,7 +1314,7 @@
                         Personenbezogene Daten werden ausschließlich zur Bearbeitung Ihrer Anfrage verarbeitet.
                         Diese Website verwendet keine Cookies oder Tracking-Tools.
                     </p>
-                    <a href="pidic_facility_management_gmbh_agb.pdf" target="_blank" rel="noopener" class="footer-link">
+                    <a href="assets/pidic_facility_management_gmbh_agb.pdf" target="_blank" rel="noopener" class="footer-link">
                         Allgemeine Geschäftsbedingungen
                     </a>
                 </div>
