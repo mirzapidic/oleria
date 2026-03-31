@@ -1,0 +1,3 @@
+SMTP_USER=example_sender@exampledomain.com
+SMTP_PASS=example_sender_password
+RECEIVER=example_receiver@exampledomain.com
