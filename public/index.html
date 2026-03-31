@@ -818,52 +818,74 @@
         CTA Section
         ################################
         */
-        .closing-contact-section { text-align: center; }
+        .closing-contact-section {
+            text-align: center;
+        }
+        .contact-layout {
+            display: grid;
+            grid-template-columns: 0.95fr 1.05fr;
+            gap: 6rem;
+            align-items: start;
+        }
+        .contact-copy { text-align: left; }
+        .contact-copy h2 { margin-bottom: 1rem; }
         .closing-contact-intro {
-            max-width: 620px;
-            margin: 0 auto 2rem auto;
+            margin: 0 0 2rem 0;
+            max-width: none;
             font-size: 1.05rem;
             color: rgba(10,37,64,0.78);
             line-height: 1.6;
         }
-        .closing-highlight {
-            max-width: 620px;
-            margin: 0 auto 1.5rem auto;
+        .contact-benefits {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        .contact-benefit {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
             text-align: left;
+            padding: 1rem 1.1rem;
             background: rgba(255,255,255,0.65);
             border: 1px solid rgba(10,37,64,0.08);
-            border-radius: 1.2rem;
-            padding: 1.4rem 1.5rem;
-            box-shadow: 0 10px 24px rgba(10,37,64,0.05);
-        }
-        .offer-highlight-item,
-        .closing-highlight {
+            border-radius: 1rem;
+            box-shadow: 0 10px 24px rgba(10,37,64,0.04);
             transition:
                     transform 0.25s ease,
                     box-shadow 0.25s ease,
                     border-color 0.25s ease,
                     background-color 0.25s ease;
         }
-        .closing-highlight:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 14px 34px rgba(10, 37, 64, 0.08);
+        .contact-benefit:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 14px 30px rgba(10,37,64,0.07);
         }
-        .closing-highlight strong {
+        .contact-benefit-icon {
+            width: 2.4rem;
+            height: 2.4rem;
+            border-radius: 0.7rem;
+            color: #0a7d86;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        .contact-benefit-icon i {
+            width: 18px;
+            height: 18px;
+        }
+        .contact-benefit strong {
             display: block;
-            margin-bottom: 0.4rem;
-            font-size: 1rem;
+            margin-bottom: 0.25rem;
+            font-size: 0.98rem;
             color: #0a2540;
         }
-        .closing-highlight p {
+        .contact-benefit p {
             margin: 0;
-            font-size: 0.95rem;
+            font-size: 0.92rem;
             line-height: 1.5;
-            color: rgba(10,37,64,0.78);
-        }
-        .closing-note {
-            font-size: 0.95rem;
-            color: rgba(10, 37, 64, 0.62);
-            margin: 1rem 0 0 0;
+            color: rgba(10,37,64,0.75);
         }
         form {
             background: rgba(255,255,255,0.96);
@@ -873,7 +895,6 @@
                     0 10px 30px rgba(10,37,64,0.05),
                     0 2px 10px rgba(10,37,64,0.03);
             width: 100%;
-            max-width: 720px;
             box-sizing: border-box;
             border: 1px solid rgba(10,37,64,0.06);
         }
@@ -1044,9 +1065,37 @@
         }
 
         /* ##### mobile ##### */
-        @media (max-width: 480px) {
-            .closing-highlight { padding: 1.2rem; }
+        @media (max-width: 900px) {
+            .contact-layout {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .contact-copy {
+                text-align: center;
+                max-width: 680px;
+                margin: 0 auto;
+            }
+            .closing-contact-intro {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .contact-benefit { text-align: left; }
         }
+        @media (max-width: 640px) {
+            .closing-contact-section form {
+                padding: 1.4rem;
+                border-radius: 1.2rem;
+            }
+            .contact-benefit { padding: 0.9rem 1rem; }
+        }
+
+
+
+
+
+
+
+
 
         /*
         ################################
@@ -1406,22 +1455,35 @@
         </div>
     </section>
     <section class="section section-blue-gradient closing-contact-section" id="contact">
-        <div class="container closing-contact-container text-center">
-            <h2>Bereit für eine Reinigung, um die Sie sich nicht mehr kümmern müssen?</h2>
-            <p class="closing-contact-intro">
-                In einem kurzen Gespräch klären wir, was für Ihr Büro sinnvoll ist und wie schnell wir starten können.
-            </p>
-            <div class="closing-highlight">
-                <strong>Schnell eingerichtet. Sofort spürbar.</strong>
-                <p>
-                    Ihr Büro wird vollständig eingerichtet und mit einer initialen Tiefreinigung auf den gewünschten Standard gebracht.
+        <div class="container contact-layout">
+            <div class="contact-copy">
+                <h2>Bereit für eine Reinigung, um die Sie sich nicht mehr kümmern müssen?</h2>
+                <p class="closing-contact-intro">
+                    In einem kurzen Gespräch klären wir, was für Ihr Büro sinnvoll ist und wie schnell wir starten können.
                 </p>
-            </div>
-            <div class="closing-highlight">
-                <strong>Sie entscheiden auf Basis Ihrer Erfahrung</strong>
-                <p>
-                    Im ersten Monat lernen Sie unseren Service im Alltag kennen. Erst danach entscheiden Sie über die weitere Zusammenarbeit.
-                </p>
+                <div class="contact-benefits">
+                    <div class="contact-benefit">
+                        <div class="contact-benefit-icon"><i data-feather="clock"></i></div>
+                        <div>
+                            <strong>Schnelle Rückmeldung</strong>
+                            <p>Wir melden uns innerhalb von 24 Stunden bei Ihnen zurück.</p>
+                        </div>
+                    </div>
+                    <div class="contact-benefit">
+                        <div class="contact-benefit-icon"><i data-feather="zap"></i></div>
+                        <div>
+                            <strong>Schnell eingerichtet</strong>
+                            <p>Start mit klaren Abläufen und initialer Tiefreinigung auf Ihren gewünschten Standard.</p>
+                        </div>
+                    </div>
+                    <div class="contact-benefit">
+                        <div class="contact-benefit-icon"><i data-feather="check-circle"></i></div>
+                        <div>
+                            <strong>Erst im Alltag bewerten</strong>
+                            <p>Im ersten Monat erleben Sie unseren Service im laufenden Betrieb, bevor Sie weiter entscheiden.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
             <form id="contactForm" novalidate>
                 <div class="form-row">
@@ -1455,9 +1517,6 @@
                 </div>
                 <p id="formError" class="form-feedback" role="alert" aria-live="polite"></p>
             </form>
-            <p class="closing-note">
-                Rückmeldung innerhalb von 24 Stunden.
-            </p>
         </div>
     </section>
     <footer class="footer">
