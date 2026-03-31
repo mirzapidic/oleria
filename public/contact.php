@@ -35,7 +35,7 @@ $phone   = cleanText($_POST['phone'] ?? '');
 $message = cleanText($_POST['message'] ?? '');
 
 // Basic validation
-if ($name === '' || $email === '' || $message === '') {
+if ($name === '' || $company === '' || $email === '' || $phone === '') {
     respond([
         'success' => false,
         'error' => 'Please fill in all required fields'
@@ -58,7 +58,7 @@ if (mb_strlen($name) > 100 || mb_strlen($company) > 150 || mb_strlen($email) > 2
 }
 
 // Load config
-$envPath = __DIR__ . '/../.env-oleria';
+$envPath = __DIR__ . '/../.env';
 
 if (!file_exists($envPath)) {
     respond([
