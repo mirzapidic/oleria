@@ -24,7 +24,7 @@
         {
             "@context": "https://schema.org",
             "@id": "https://oleria.at/#organization",
-            "@type": "CleaningService",
+            "@type": "LocalBusiness",
             "name": "Oleria",
             "legalName": "Pidic Facility Management GmbH",
             "url": "https://oleria.at/",
@@ -61,7 +61,21 @@
                 ],
                 "opens": "08:00",
                 "closes": "18:30"
-            }]
+            }],
+            "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Reinigungsservices",
+                "itemListElement": [
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Büroreinigung",
+                            "serviceType": "Gewerbliche Büroreinigung"
+                        }
+                    }
+                ]
+            }
         }
     </script>
 
