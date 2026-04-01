@@ -1857,6 +1857,25 @@
         });
         document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
+
+        // ###########################################################
+        // FAQ functions
+        // ###########################################################
+        // Only one item open at a time in the accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            item.addEventListener('toggle', () => {
+                if (!item.open) return;
+
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.removeAttribute('open');
+                    }
+                });
+            });
+        });
+
         // ###########################################################
         // Contact form functions
         // ###########################################################
