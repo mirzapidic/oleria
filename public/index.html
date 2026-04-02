@@ -227,6 +227,10 @@
             margin: 0 auto;
             box-sizing: border-box;
         }
+        svg {
+            width: 3vh;
+            height: 3vh;
+        }
 
         /* ##### responsive ##### */
         @media (max-width: 2048px) {
@@ -525,7 +529,6 @@
         .section-blue-gradient { background: linear-gradient(to bottom, #ffffff, #d9ebf2); }
         .section-subtitle,
         .offer-description {
-            margin-bottom: 3rem;
             font-size: clamp(1.15rem, 0.9vw + 0.8rem, 3.8rem);
             line-height: 1.5;
             text-align: center;
@@ -549,14 +552,14 @@
         .cards {
             width: 80%;
             display: flex;
-            gap: 2rem;
+            gap: 1.5vw;
             flex-wrap: wrap;
             justify-content: center;
         }
         .card {
             background: #f8f5f2;
-            padding: 2rem;
-            border-radius: 1rem;
+            padding: 3%;
+            border-radius: 5%;
             flex: 1;
             width: 33%;
             box-sizing: border-box;
@@ -638,15 +641,15 @@
             letter-spacing: 0.05em;
             text-transform: uppercase;
             color: rgba(255,255,255,0.65);
-            margin-bottom: 1rem;
+            margin-bottom: 1vh;
         }
         .offer-description { color: rgba(255,255,255,0.85); }
         .offer-highlight {
             background: rgba(255,255,255,0.08);
             border: 1px solid rgba(255,255,255,0.15);
-            border-radius: 1.5rem;
-            padding: 2rem;
-            margin-bottom: 2.5rem;
+            border-radius: 2rem;
+            padding: 2.5vw;
+            margin-bottom: 2.5vh;
             backdrop-filter: blur(6px);
             text-align: left;
         }
@@ -655,12 +658,12 @@
             text-transform: uppercase;
             letter-spacing: 0.06em;
             color: rgba(255,255,255,0.6);
-            margin-bottom: 1.8rem;
+            margin-bottom: 1.8vh;
         }
         .offer-highlight-items {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 2.5rem;
+            gap: 2.5vw;
         }
         .offer-highlight-item {
             display: flex;
@@ -668,14 +671,14 @@
             align-items: flex-start;
         }
         .offer-highlight-icon {
-            width: 72px;
-            height: 72px;
+            width: 6vh;
+            height: 6vh;
             background: rgba(33,248,246,0.18);
-            border-radius: 1rem;
+            border-radius: 100rem;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 1.2rem;
+            margin-bottom: 1.2vh;
             box-shadow: 0 8px 20px rgba(0,0,0,0.15);
         }
         .offer-highlight-icon i {
@@ -885,6 +888,10 @@
             align-items: flex-start;
         }
         .feature-icon-peach { color: #ffb8a4; }
+        .feature p,
+        .feature h3 {
+            margin: 0 0 0.4rem;
+        }
 
         /* ##### responsive ##### */
         @media (max-width: 1000px) {
@@ -983,6 +990,7 @@
         ################################
         */
         .closing-contact-section {
+            padding-top: 0;
             text-align: center;
         }
         .contact-layout {
@@ -1026,18 +1034,14 @@
             box-shadow: 0 14px 30px rgba(10,37,64,0.07);
         }
         .contact-benefit-icon {
-            width: 2.4rem;
-            height: 2.4rem;
+            width: 2.2vh;
+            height: 2.2vh;
             border-radius: 0.7rem;
             color: #0a7d86;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-shrink: 0;
-        }
-        .contact-benefit-icon i {
-            width: 18px;
-            height: 18px;
         }
         .contact-benefit strong {
             font-size: clamp(1rem, 0.5vw + 0.9rem, 2.5rem);
@@ -1352,13 +1356,19 @@
             line-height: 1.3;
             opacity: 0.85;
         }
-        .footer-column-logo {
+        .footer-column.footer-column-logo {
+            display: flex;
+            justify-content: center;  /* horizontal */
+            align-items: center;      /* vertical */
+        }
+        .footer-column.footer-column-logo .footer-column-content {
             display: flex;
             justify-content: center;
+            align-items: center;
+            width: 100%;
         }
         .footer-logo {
-            max-width: 180px;
-            width: 100%;
+            width: 30%;
             height: auto;
             display: block;
         }
