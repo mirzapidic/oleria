@@ -170,7 +170,7 @@
 </head>
 
 <body>
-    <?php include 'components/navbar.php';  ?>
+    <?php include __DIR__ . '/components/navbar.php';  ?>
 
     <header id="hero">
         <div class="hero-shell">
@@ -542,6 +542,6 @@
         </div>
     </section>
 
-    <?php include 'components/footer.php';  ?>
+    <?php include __DIR__ . '/components/footer.php';  ?>
 </body>
 </html>
