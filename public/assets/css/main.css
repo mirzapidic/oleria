@@ -78,6 +78,8 @@ svg.feather {
     align-items: center;
     gap: 0.5rem;
 }
+.inline-link .icon { transition: transform 0.2s ease; }
+.inline-link:hover .icon { transform: translateY(1px); }
 
 /* ##### responsive ##### */
 @media (min-width: 2560px) {

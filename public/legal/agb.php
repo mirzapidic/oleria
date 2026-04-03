@@ -33,7 +33,7 @@
         <div class="legal-content">
             <p>Stand: 10/2025</p>
             <p>
-                <a href="/assets/documents/agb-oleria-bueroreinigung-graz.pdf" target="_blank" rel="noopener" class="inline-link">
+                <a href="/assets/documents/agb-oleria-bueroreinigung-graz.pdf" download class="inline-link">
                     <span class="icon icon-md">
                         <i data-feather="download"></i>
                     </span>
