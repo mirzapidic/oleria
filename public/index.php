@@ -174,7 +174,6 @@
     $isHomePage = True;
     include __DIR__ . '/components/navbar.php';
     ?>
-
     <header id="hero">
         <div class="hero-shell">
             <div class="hero-copy">
@@ -544,7 +543,16 @@
             </div>
         </div>
     </section>
-
+    <div class="success-modal" id="successModal" aria-hidden="true">
+        <div class="success-modal-backdrop"></div>
+        <div class="success-modal-dialog" role="status" aria-live="polite" aria-modal="true">
+            <div class="success-modal-icon">
+                <i data-feather="check"></i>
+            </div>
+            <h3>Vielen Dank</h3>
+            <p>Ihre Anfrage wurde erfolgreich übermittelt. Wir melden uns in Kürze bei Ihnen.</p>
+        </div>
+    </div>
     <?php include __DIR__ . '/components/footer.php';  ?>
 </body>
 </html>

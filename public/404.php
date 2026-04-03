@@ -1,7 +1,4 @@
-<?php
-http_response_code(404);
-$isHomePage = false;
-?>
+<?php http_response_code(404); ?>
 <!DOCTYPE html>
 <html lang="de-AT">
 
