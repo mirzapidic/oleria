@@ -1,7 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-
-
-
     feather.replace();
 
     // ###########################################################
@@ -77,6 +74,15 @@ document.addEventListener("DOMContentLoaded", () => {
     // Accessibility: close mobile menu on escape
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && mainNav.classList.contains('open')) {
+            mainNav.classList.remove('open');
+            menuToggle.setAttribute('aria-expanded', 'false');
+            menuToggle.querySelector('i').setAttribute('data-feather', 'menu');
+            feather.replace();
+        }
+    });
+    // Accessibility: close mobile menu on backbutton pressing
+    window.addEventListener('popstate', () => {
+        if (mainNav.classList.contains('open')) {
             mainNav.classList.remove('open');
             menuToggle.setAttribute('aria-expanded', 'false');
             menuToggle.querySelector('i').setAttribute('data-feather', 'menu');

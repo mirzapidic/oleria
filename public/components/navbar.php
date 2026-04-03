@@ -6,6 +6,9 @@ $homePrefix = $isHomePage ? '' : '/index.php';
     <a href="<?= $homePrefix ?>#hero" class="logo">
         <img src="../assets/images/oleria-logo-bueroreinigung-graz.png" alt="Oleria Logo">
     </a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" title="Navigation">
+        <i data-feather="menu"></i>
+    </button>
     <ul id="main-nav">
         <li><a href="<?= $homePrefix ?>#problem">Problem</a></li>
         <li><a href="<?= $homePrefix ?>#offer">Leistung</a></li>
