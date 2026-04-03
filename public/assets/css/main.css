@@ -59,8 +59,37 @@ section { scroll-margin-top: var(--nav-height); }
     margin: 0 auto;
     box-sizing: border-box;
 }
+svg.feather {
+    width: 100%;
+    height: 100%;
+}
+.icon svg,
+svg.feather {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.icon-sm { width: 1.2rem; height: 1.2rem; }
+.icon-md { width: 1.6rem; height: 1.7rem; }
+.icon-lg { width: 2.2rem; height: 2.2rem; }
+.icon-xl { width: 3.6rem; height: 3.6rem; }
 
 /* ##### responsive ##### */
+@media (min-width: 2560px) {
+    html { font-size: 20px; }
+}
+@media (max-width: 2559px) {
+    html { font-size: 18px; }
+}
+@media (max-width: 1919px) {
+    html { font-size: 17px; }
+}
+@media (max-width: 1439px) {
+    html { font-size: 16px; }
+}
+@media (max-width: 768px) {
+    html { font-size: 16px; }
+}
 @media (max-width: 580px) {
     h3 { font-size: max(1.7vw, 1.7vh); }
     p,
@@ -70,8 +99,12 @@ section { scroll-margin-top: var(--nav-height); }
     }
 }
 @media (max-width: 480px) {
+    html { font-size: 15px; }
     .container { max-width: 96%; padding: 0 8px; }
     .btn { padding: 0.65rem 1.1rem; }
+}
+@media (max-width: 360px) {
+    html { font-size: 14px; }
 }
 
 /*
@@ -497,8 +530,6 @@ Offer Section
     align-items: flex-start;
 }
 .offer-highlight-icon {
-    width: 6vh;
-    height: 6vh;
     border-radius: 100rem;
     display: flex;
     align-items: center;
@@ -506,8 +537,6 @@ Offer Section
     margin-bottom: 1.2vh;
 }
 .offer-highlight-icon i {
-    width: 32px;
-    height: 32px;
     color: #21f8f6;
 }
 .offer-highlight-text strong {
@@ -543,14 +572,6 @@ Offer Section
         text-align: center;
     }
     .offer-highlight { text-align: center; }
-    .offer-highlight-icon {
-        width: 64px;
-        height: 64px;
-    }
-    .offer-highlight-icon i {
-        width: 28px;
-        height: 28px;
-    }
 }
 @media (max-width: 580px) {
     .offer-highlight-title,
@@ -713,7 +734,10 @@ Team Section
     gap: 1rem;
     align-items: flex-start;
 }
-.feature-icon-peach { color: #ffb8a4; }
+.feature-icon{
+    color: #ffb8a4;
+    flex-shrink: 0;
+}
 .feature p,
 .feature h3 {
     margin: 0 0 0.4rem;
@@ -859,8 +883,6 @@ CTA Section
     box-shadow: 0 14px 30px rgba(10,37,64,0.07);
 }
 .contact-benefit-icon {
-    width: 2.2vh;
-    height: 2.2vh;
     border-radius: 0.7rem;
     color: #0a7d86;
     display: flex;

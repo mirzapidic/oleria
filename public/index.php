@@ -199,16 +199,16 @@
             </p>
             <div class="cards" role="list">
                 <div class="card reveal reveal-delay-1" role="listitem">
-                    <div class="card-icon"><i data-feather="alert-circle"></i></div>
+                    <div class="card-icon icon icon-md"><i data-feather="alert-circle"></i></div>
                     <h3>Unklare Abläufe, schwankende Qualität</h3>
                     <p>Ohne klare Systeme bleibt unklar, was tatsächlich erledigt wurde. Wechselnde Teams, fehlende Standards und mangelnde Kontrolle führen zu inkonstanten Ergebnissen.</p>
                 </div>
                 <div class="card reveal reveal-delay-2" role="listitem">
-                    <div class="card-icon"><i data-feather="users"></i></div>
+                    <div class="card-icon icon icon-md"><i data-feather="users"></i></div>
                     <h3>Zusätzlicher Koordinationsaufwand</h3>
                     <p>Rückfragen, Nachbesserungen und Abstimmungen kosten Zeit und Aufmerksamkeit. Fehlende Struktur führt zu zusätzlichem Aufwand, der interne Ressourcen bindet und vom Kerngeschäft ablenkt.</p>                </div>
                 <div class="card reveal reveal-delay-3" role="listitem">
-                    <div class="card-icon"><i data-feather="clock"></i></div>
+                    <div class="card-icon icon icon-md"><i data-feather="clock"></i></div>
                     <h3>Kein konstant professioneller Eindruck</h3>
                     <p>Ihr Büro ist Teil Ihrer Außenwirkung. Schwankende Sauberkeit führt schnell zu einem Eindruck, der nicht Ihrer tatsächlichen Qualität entspricht – besonders gegenüber Kunden und Besuchern.</p>                </div>
             </div>
@@ -231,7 +231,7 @@
                 </div>
                 <div class="offer-highlight-items">
                     <div class="offer-highlight-item">
-                        <div class="offer-highlight-icon">
+                        <div class="offer-highlight-icon icon icon-xl">
                             <i data-feather="sun"></i>
                         </div>
                         <div class="offer-highlight-text">
@@ -243,7 +243,7 @@
                         </div>
                     </div>
                     <div class="offer-highlight-item">
-                        <div class="offer-highlight-icon">
+                        <div class="offer-highlight-icon icon icon-xl">
                             <i data-feather="lock"></i>
                         </div>
                         <div class="offer-highlight-text">
@@ -331,7 +331,7 @@
                 </p>
                 <div class="feature-list">
                     <div class="feature">
-                        <div class="feature-icon-peach">
+                        <div class="feature-icon icon icon-md">
                             <i data-feather="award"></i>
                         </div>
                         <div>
@@ -343,7 +343,7 @@
                         </div>
                     </div>
                     <div class="feature">
-                        <div class="feature-icon-peach">
+                        <div class="feature-icon icon icon-md">
                             <i data-feather="bar-chart-2"></i>
                         </div>
                         <div>
@@ -356,7 +356,7 @@
                         </div>
                     </div>
                     <div class="feature">
-                        <div class="feature-icon-peach">
+                        <div class="feature-icon icon icon-md">
                             <i data-feather="users"></i>
                         </div>
                         <div>
@@ -475,21 +475,21 @@
                 <p class="closing-contact-intro">Innerhalb weniger Tage umgesetzt – eine Büroreinigung in Graz, die Sie im ersten Monat ohne Bindung erleben können.</p>
                 <div class="contact-benefits">
                     <div class="contact-benefit">
-                        <div class="contact-benefit-icon"><i data-feather="clock"></i></div>
+                        <div class="contact-benefit-icon icon icon-sm"><i data-feather="clock"></i></div>
                         <div>
                             <strong>Schnelle Rückmeldung</strong>
                             <p>Wir melden uns innerhalb von 24 Stunden bei Ihnen zurück.</p>
                         </div>
                     </div>
                     <div class="contact-benefit">
-                        <div class="contact-benefit-icon"><i data-feather="zap"></i></div>
+                        <div class="contact-benefit-icon icon icon-sm"><i data-feather="zap"></i></div>
                         <div>
                             <strong>Einrichtung ohne Aufwand</strong>
                             <p>Strukturierter Start mit initialer Tiefreinigung auf Ihren gewünschten Standard.</p>
                         </div>
                     </div>
                     <div class="contact-benefit">
-                        <div class="contact-benefit-icon"><i data-feather="check-circle"></i></div>
+                        <div class="contact-benefit-icon icon icon-sm"><i data-feather="check-circle"></i></div>
                         <div>
                             <strong>Erst im Alltag bewerten</strong>
                             <p>Im ersten Monat erleben Sie unseren Service im laufenden Betrieb, bevor Sie weiter entscheiden.</p>
