@@ -30,13 +30,17 @@ document.addEventListener("DOMContentLoaded", () => {
             const href = this.getAttribute('href');
             if (!href) return;
 
-            const url = new URL(href, window.location.origin);
-            const isSamePage =
-                url.pathname === window.location.pathname ||
-                (window.location.pathname.endsWith('/index.php') && url.pathname === '/index.php') ||
-                (window.location.pathname === '/' && url.pathname === '/index.php');
+            const url = new URL(href, window.location.href);
 
-            if (!url.hash || !isSamePage) return;
+            const normalize = (path) => {
+                if (path === '/index.php') return '/';
+                return path.replace(/\/+$/, '') || '/';
+            };
+
+            const currentPath = normalize(window.location.pathname);
+            const targetPath = normalize(url.pathname);
+
+            if (!url.hash || currentPath !== targetPath) return;
 
             const targetId = url.hash.slice(1);
             const target = document.getElementById(targetId);
