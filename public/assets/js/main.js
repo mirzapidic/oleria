@@ -70,8 +70,7 @@ document.addEventListener("DOMContentLoaded", () => {
             feather.replace();
         }
     }));
-
-    // Accessibility: close mobile menu on escape
+    // Close mobile menu on escape
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && mainNav.classList.contains('open')) {
             mainNav.classList.remove('open');
@@ -80,9 +79,13 @@ document.addEventListener("DOMContentLoaded", () => {
             feather.replace();
         }
     });
-    // Accessibility: close mobile menu on backbutton pressing
-    window.addEventListener('popstate', () => {
-        if (mainNav.classList.contains('open')) {
+    // Close mobile menu on click outside of it on the screen
+    document.addEventListener('click', (e) => {
+        if (!mainNav.classList.contains('open')) return;
+
+        const isClickInsideMenu = mainNav.contains(e.target);
+        const isClickOnToggle = menuToggle.contains(e.target);
+        if (!isClickInsideMenu && !isClickOnToggle) {
             mainNav.classList.remove('open');
             menuToggle.setAttribute('aria-expanded', 'false');
             menuToggle.querySelector('i').setAttribute('data-feather', 'menu');
