@@ -232,7 +232,4 @@ document.addEventListener("DOMContentLoaded", () => {
             formError.textContent = '';
         });
     });
-
-
-
 });

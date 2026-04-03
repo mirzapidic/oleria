@@ -1223,3 +1223,62 @@ Footer
         font-size: max(1.5vw, 1.5vh);
     }
 }
+
+/*
+################################
+Article / Blog
+################################
+*/
+
+.article-container {
+    max-width: 720px;
+}
+
+.article-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.article-header h1 {
+    font-size: 2.4rem;
+    line-height: 1.2;
+}
+
+.article-subtitle {
+    color: rgba(10,37,64,0.7);
+    font-size: 1.05rem;
+    line-height: 1.5;
+}
+
+.article-content {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: rgba(10,37,64,0.85);
+}
+
+.article-content p {
+    margin-bottom: 1.4rem;
+}
+
+.article-content h2 {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.article-cta {
+    margin-top: 3rem;
+    padding: 1.8rem;
+    border-radius: 1.2rem;
+    background: #f8f5f2;
+    border: 1px solid rgba(10,37,64,0.08);
+    text-align: center;
+}
+
+.article-cta p {
+    margin-bottom: 1rem;
+}
+
+.article-cta .btn {
+    background: #0a2540;
+}

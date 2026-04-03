@@ -4,6 +4,10 @@
 * Composer
 * SMTP credentials (e.g. Gmail / Google Workspace)
 
+## Dependencies
+
+* phpmailer/phpmailer
+
 ## Installation
 
 Clone the repository:
@@ -22,13 +26,14 @@ Create a file in the project root:
 .env
 
 Example (see .env.example):
-
 SMTP_USER=[your@email.com](mailto:your@email.com)
 SMTP_PASS=yourpassword
 RECEIVER=[your@email.com](mailto:your@email.com)
 
-## Dependencies
-* phpmailer/phpmailer
+## Local development
+cd into the public folder
+run "php -S localhost:8000"
+open http://localhost:8000 in browser
 
 ## Deployment
 # Build everything, and copy files to the app public folder
