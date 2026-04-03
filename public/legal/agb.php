@@ -33,8 +33,10 @@
         <div class="legal-content">
             <p>Stand: 10/2025</p>
             <p>
-                <a href="/assets/documents/agb-oleria-bueroreinigung-graz.pdf" target="_blank" rel="noopener">
-                    <i data-feather="download"></i>
+                <a href="/assets/documents/agb-oleria-bueroreinigung-graz.pdf" target="_blank" rel="noopener" class="inline-link">
+                    <span class="icon icon-md">
+                        <i data-feather="download"></i>
+                    </span>
                     AGBs als PDF herunterladen
                 </a>
             </p>

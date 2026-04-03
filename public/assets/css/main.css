@@ -73,6 +73,11 @@ svg.feather {
 .icon-md { width: 1.6rem; height: 1.7rem; }
 .icon-lg { width: 2.2rem; height: 2.2rem; }
 .icon-xl { width: 3.6rem; height: 3.6rem; }
+.inline-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
 
 /* ##### responsive ##### */
 @media (min-width: 2560px) {
