@@ -27,7 +27,7 @@
                     Personenbezogene Daten werden ausschließlich zur Bearbeitung Ihrer Anfrage verarbeitet.
                     Diese Website verwendet keine Cookies oder Tracking-Tools.
                 </p>
-                <a href="../assets/documents/oleria-agb.pdf" target="_blank" rel="noopener" class="footer-link">
+                <a href="/assets/documents/agb-bueroreinigung-graz-agb.pdf" target="_blank" rel="noopener" class="footer-link">
                     Allgemeine Geschäftsbedingungen
                 </a>
             </div>

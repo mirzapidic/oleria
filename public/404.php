@@ -28,9 +28,7 @@ $isHomePage = false;
 </head>
 
 <body>
-
 <?php include __DIR__ . '/components/navbar.php'; ?>
-
 <section class="section section-white">
     <div class="container" style="text-align:center; padding: 6rem 0;">
         <h1>Diese Seite konnte nicht gefunden werden</h1>
@@ -39,15 +37,12 @@ $isHomePage = false;
             Wenn Sie nach einer zuverlässigen Büroreinigung in Graz suchen,
             sind Sie hier trotzdem richtig.
         </p>
-
         <div style="margin-top:2rem;">
             <a href="/index.php" class="btn header-btn">Zur Startseite</a>
             <a href="/index.php#contact" class="btn header-btn">Beratung vereinbaren</a>
         </div>
     </div>
 </section>
-
 <?php include __DIR__ . '/components/footer.php'; ?>
-
 </body>
 </html>
