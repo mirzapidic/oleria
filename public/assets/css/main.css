@@ -1313,12 +1313,12 @@ Legal Pages
     display: flex;
     justify-content: left;
 }
-.legal-btn {
+.navy-btn {
     background: linear-gradient(90deg, #0f2a44, #173a5c);
     border-radius: 14px;
     box-shadow: 0 10px 22px rgba(15,42,68,0.12);
 }
-.legal-btn:hover { background: linear-gradient(90deg, #173a5c, #224769); }
+.navy-btn:hover { background: linear-gradient(90deg, #173a5c, #224769); }
 
 /* ##### responsive ##### */
 @media (max-width: 640px) {

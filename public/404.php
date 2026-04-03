@@ -35,8 +35,8 @@
             sind Sie hier trotzdem richtig.
         </p>
         <div style="margin-top:2rem;">
-            <a href="/index.php" class="btn header-btn">Zur Startseite</a>
-            <a href="/index.php#contact" class="btn header-btn">Beratung vereinbaren</a>
+            <a href="/index.php" class="btn navy-btn">Zur Startseite</a>
+            <a href="/index.php#contact" class="btn navy-btn">Beratung vereinbaren</a>
         </div>
     </div>
 </section>
