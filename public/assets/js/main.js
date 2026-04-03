@@ -24,6 +24,31 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     document.querySelectorAll('section[id], header[id]').forEach(section => sectionObserver.observe(section));
 
+    // Smooth scroll for internal anchors on the current page
+    document.querySelectorAll('a[href*="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const href = this.getAttribute('href');
+            if (!href) return;
+
+            const url = new URL(href, window.location.origin);
+            const isSamePage =
+                url.pathname === window.location.pathname ||
+                (window.location.pathname.endsWith('/index.php') && url.pathname === '/index.php') ||
+                (window.location.pathname === '/' && url.pathname === '/index.php');
+
+            if (!url.hash || !isSamePage) return;
+
+            const targetId = url.hash.slice(1);
+            const target = document.getElementById(targetId);
+
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                history.replaceState(null, '', url.hash);
+            }
+        });
+    });
+
     // Mobile menu toggle
     const menuToggle = document.querySelector('.menu-toggle');
     const mainNav = document.getElementById('main-nav');
@@ -53,18 +78,6 @@ document.addEventListener("DOMContentLoaded", () => {
             menuToggle.querySelector('i').setAttribute('data-feather', 'menu');
             feather.replace();
         }
-    });
-
-    // Smooth scroll for internal anchors
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            const targetId = this.getAttribute('href').slice(1);
-            const target = document.getElementById(targetId);
-            if (target) {
-                e.preventDefault();
-                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
-        });
     });
 
     // ###########################################################

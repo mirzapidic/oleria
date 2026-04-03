@@ -170,7 +170,10 @@
 </head>
 
 <body>
-    <?php include __DIR__ . '/components/navbar.php';  ?>
+    <?php
+    $isHomePage = True;
+    include __DIR__ . '/components/navbar.php';
+    ?>
 
     <header id="hero">
         <div class="hero-shell">
