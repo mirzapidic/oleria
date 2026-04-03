@@ -36,9 +36,6 @@
                     <a href="/legal/datenschutz.php" class="footer-link">Datenschutz</a><br>
                     <a href="/legal/agb.php" class="footer-link">AGB</a>
                 </p>
-                <p class="data-processing-notice">
-                    Personenbezogene Daten werden ausschließlich zur Bearbeitung Ihrer Anfrage verarbeitet.
-                </p>
             </div>
         </div>
         <div class="footer-column footer-column-logo">

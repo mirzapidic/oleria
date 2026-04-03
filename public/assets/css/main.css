@@ -1172,11 +1172,6 @@ Footer
     transition: 0.2s;
 }
 .footer-link:hover { font-weight: 550; }
-.data-processing-notice {
-    margin-top: 1rem;
-    font-size: max(1vw, 1vh);
-    opacity: 0.8;
-}
 .footer-bottom {
     text-align: center;
     border-top: 1px solid rgba(255,255,255,0.15);
