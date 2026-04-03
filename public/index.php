@@ -372,7 +372,7 @@
             </div>
         </div>
     </section>
-    <section class="section section-white " id="faq">
+    <section class="section section-white faq-section" id="faq">
         <div class="container ">
             <div class="faq-intro">
                 <h2>Häufige Fragen</h2>
