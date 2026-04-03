@@ -59,10 +59,6 @@ section { scroll-margin-top: var(--nav-height); }
     margin: 0 auto;
     box-sizing: border-box;
 }
-svg {
-    width: max(3vw, 3vh);
-    height: max(3vw, 3vh);
-}
 
 /* ##### responsive ##### */
 @media (max-width: 580px) {
