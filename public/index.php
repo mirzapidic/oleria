@@ -18,8 +18,8 @@
     <meta property="og:description" content="Diskrete und nachvollziehbare Büroreinigung in Graz. Klare Abläufe, dokumentierte Einsätze und verlässliche Betreuung für Unternehmen.">
     <meta property="og:image" content="https://oleria.at/assets/images/group_photo_desktop.webp">
 
-    <link rel="icon" href="assets/images/oleria-favicon-32x32.webp" sizes="32x32">
-    <link rel="apple-touch-icon" href="assets/images/oleria-apple-touch-icon.webp">
+    <link rel="icon" href="/assets/images/oleria-favicon-32x32.webp" sizes="32x32">
+    <link rel="apple-touch-icon" href="/assets/images/oleria-apple-touch-icon.webp">
 
     <script type="application/ld+json">
         {
@@ -253,7 +253,7 @@
 
     <link rel="stylesheet" href="assets/css/main.css">
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js" defer></script>
-    <script src="assets/js/main.js" defer></script>
+    <script src="/assets/js/main.js" defer></script>
 </head>
 
 <body>
@@ -270,7 +270,7 @@
             </div>
             <div class="hero-visual">
                 <div class="hero-photo-card">
-                    <img src="assets/images/buero-reinigung-graz-team-oleria-desktop.webp" alt="Team von Oleria – professionelle Büroreinigung in Graz">
+                    <img src="/assets/images/buero-reinigung-graz-team-oleria-desktop.webp" alt="Team von Oleria – professionelle Büroreinigung in Graz">
                 </div>
             </div>
         </div>
@@ -364,7 +364,7 @@
                     </div>
                     <div class="proof-visual">
                         <div class="proof-image-placeholder">
-                            <img src="assets/images/dokumentierte-bueroreinigung-graz.webp" alt="Dokumentierter Reinigungseinsatz bei einer Büroreinigung in Graz" loading="lazy">
+                            <img src="/assets/images/dokumentierte-bueroreinigung-graz.webp" alt="Dokumentierter Reinigungseinsatz bei einer Büroreinigung in Graz" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -380,7 +380,7 @@
                     </div>
                     <div class="proof-visual">
                         <div class="proof-image-placeholder">
-                            <img src="assets/images/qualitaetskontrolle-bueroreinigung-graz.webp" alt="Qualitätskontrolle einer Büroreinigung in Graz" loading="lazy">
+                            <img src="/assets/images/qualitaetskontrolle-bueroreinigung-graz.webp" alt="Qualitätskontrolle einer Büroreinigung in Graz" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -395,7 +395,7 @@
                     </div>
                     <div class="proof-visual">
                         <div class="proof-image-placeholder">
-                            <img src="assets/images/bueroreinigung-graz-report-bericht.webp" alt="Bericht und Reporting einer Büroreinigung in Graz" loading="lazy">
+                            <img src="/assets/images/bueroreinigung-graz-report-bericht.webp" alt="Bericht und Reporting einer Büroreinigung in Graz" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -405,7 +405,7 @@
     <section class="section section-white" id="team">
         <div class="container flex-row">
             <div class="image-wrapper" aria-hidden="true">
-                <img src="assets/images/reinigungskraft-team-buero-reinigung-graz.webp" alt="Professionelle Reinigungskraft in einem Büro in Graz" loading="lazy">
+                <img src="/assets/images/reinigungskraft-team-buero-reinigung-graz.webp" alt="Professionelle Reinigungskraft in einem Büro in Graz" loading="lazy">
             </div>
             <div class="content">
                 <h2>Ein Team, das Ihrem Anspruch gerecht wird</h2>
