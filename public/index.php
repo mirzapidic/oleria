@@ -94,7 +94,7 @@
                                 "@type": "Organization",
                                 "name": "Wirtschaftskammer Österreich"
                             },
-                            "validFor": {
+                            "validIn": {
                                 "@type": "AdministrativeArea",
                                 "name": "Österreich"
                             }
