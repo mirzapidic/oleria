@@ -13,21 +13,21 @@
     <meta property="og:type" content="<?= htmlspecialchars($pageOgType ?? 'article') ?>">
     <meta property="og:title" content="<?= htmlspecialchars($pageTitle ?? 'Oleria') ?>">
     <meta property="og:description" content="<?= htmlspecialchars($pageDescription ?? '') ?>">
-    <meta property="og:image" content="<?= htmlspecialchars($pageOgImage ?? 'https://oleria.at/assets/images/buero-reinigung-graz-team-oleria-desktop.png') ?>">
+    <meta property="og:image" content="<?= htmlspecialchars($pageOgImage ?? 'https://oleria.at/assets/images/buero-reinigung-graz-team-oleria-desktop.webp') ?>">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="<?= htmlspecialchars($pageTitle ?? 'Oleria') ?>">
     <meta name="twitter:description" content="<?= htmlspecialchars($pageDescription ?? '') ?>">
-    <meta name="twitter:image" content="<?= htmlspecialchars($pageOgImage ?? 'https://oleria.at/assets/images/buero-reinigung-graz-team-oleria-desktop.png') ?>">
+    <meta name="twitter:image" content="<?= htmlspecialchars($pageOgImage ?? 'https://oleria.at/assets/images/buero-reinigung-graz-team-oleria-desktop.webp') ?>">
 
-    <link rel="icon" href="/assets/images/oleria-favicon-32x32.png" sizes="32x32">
-    <link rel="apple-touch-icon" href="/assets/images/oleria-apple-touch-icon.png">
+    <link rel="icon" href="/assets/images/oleria-favicon-32x32.webp" sizes="32x32">
+    <link rel="apple-touch-icon" href="/assets/images/oleria-apple-touch-icon.webp">
 
     <?php
     $schemaPageTitle = $pageTitle ?? 'Oleria';
     $schemaDescription = $pageDescription ?? '';
     $schemaCanonical = $pageCanonical ?? 'https://oleria.at/';
-    $schemaOgImage = $pageOgImage ?? 'https://oleria.at/assets/images/buero-reinigung-graz-team-oleria-desktop.png';
+    $schemaOgImage = $pageOgImage ?? 'https://oleria.at/assets/images/buero-reinigung-graz-team-oleria-desktop.webp';
     $schemaHeadline = $articleHeadline ?? $schemaPageTitle;
 
     $schemaDatePublished = $articleDatePublished ?? null;
@@ -76,7 +76,7 @@
                             'logo' => [
                                     '@type' => 'ImageObject',
                                     '@id' => 'https://oleria.at/#logo',
-                                    'url' => 'https://oleria.at/assets/images/oleria-logo-bueroreinigung-graz.png'
+                                    'url' => 'https://oleria.at/assets/images/oleria-logo-bueroreinigung-graz.webp'
                             ]
                     ],
                     'inLanguage' => 'de-AT',

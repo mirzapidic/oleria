@@ -319,7 +319,7 @@ header {
         padding: 6.5rem 0 3rem 0;
         background:
                 linear-gradient(to bottom, rgba(10, 37, 64, 0.25), rgba(10, 37, 64, 0)),
-                url('../images/buero-reinigung-graz-team-oleria-mobile.png') center center / cover no-repeat;
+                url('../images/buero-reinigung-graz-team-oleria-mobile.webp') center center / cover no-repeat;
         height: calc(100dvh - var(--nav-height));
         min-height: 0;
         display: flex;
@@ -503,7 +503,7 @@ Offer Section
     justify-content: center;
     color: white;
     text-align: center;
-    background: url('../images/buero-graz-saubere-arbeitsumgebung.png') center/cover no-repeat;
+    background: url('../images/buero-graz-saubere-arbeitsumgebung.webp') center/cover no-repeat;
 }
 .offer-bg-overlay {
     position: absolute;

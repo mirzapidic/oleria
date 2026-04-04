@@ -4,7 +4,7 @@ $homePrefix = $isHomePage ? '' : '/index.php';
 ?>
 <nav>
     <a href="<?= $homePrefix ?>#hero" class="logo">
-        <img src="/assets/images/oleria-logo-bueroreinigung-graz.png" alt="Oleria Logo">
+        <img src="/assets/images/oleria-logo-bueroreinigung-graz.webp" alt="Oleria Logo">
     </a>
     <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" title="Navigation">
         <i data-feather="menu"></i>

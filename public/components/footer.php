@@ -41,7 +41,7 @@
         <div class="footer-column">
             <div class="footer-column-content">
                 <div class="footer-certificate-logo-container">
-                    <img src="/assets/images/meisterbetrieb-gebaeudereinigung.png"
+                    <img src="/assets/images/meisterbetrieb-gebaeudereinigung.webp"
                          alt="WKO Meisterbetrieb Gebäudereinigung"
                          class="footer-certificate-logo"
                          loading="lazy"

@@ -8,8 +8,8 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://oleria.at/impressum.php">
 
-    <link rel="icon" href="/assets/images/oleria-favicon-32x32.png" sizes="32x32">
-    <link rel="apple-touch-icon" href="/assets/images/oleria-apple-touch-icon.png">
+    <link rel="icon" href="/assets/images/oleria-favicon-32x32.webp" sizes="32x32">
+    <link rel="apple-touch-icon" href="/assets/images/oleria-apple-touch-icon.webp">
 
     <link rel="stylesheet" href="/assets/css/main.css">
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js" defer></script>

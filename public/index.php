@@ -16,10 +16,10 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Büroreinigung Graz für Unternehmen | Oleria">
     <meta property="og:description" content="Diskrete und nachvollziehbare Büroreinigung in Graz. Klare Abläufe, dokumentierte Einsätze und verlässliche Betreuung für Unternehmen.">
-    <meta property="og:image" content="https://oleria.at/assets/images/group_photo_desktop.png">
+    <meta property="og:image" content="https://oleria.at/assets/images/group_photo_desktop.webp">
 
-    <link rel="icon" href="assets/images/oleria-favicon-32x32.png" sizes="32x32">
-    <link rel="apple-touch-icon" href="assets/images/oleria-apple-touch-icon.png">
+    <link rel="icon" href="assets/images/oleria-favicon-32x32.webp" sizes="32x32">
+    <link rel="apple-touch-icon" href="assets/images/oleria-apple-touch-icon.webp">
 
     <script type="application/ld+json">
         {
@@ -35,11 +35,11 @@
                     "email": "office@oleria.at",
                     "telephone": "+436765320111",
                     "description": "Oleria bietet Büroreinigung in Graz für Unternehmen. Der Fokus liegt auf diskreter, nachvollziehbarer und verlässlicher Reinigung mit klaren Abläufen, dokumentierten Einsätzen und vollständiger Betreuung.",
-                    "image": "https://oleria.at/assets/images/buero-reinigung-graz-team-oleria-desktop.png",
+                    "image": "https://oleria.at/assets/images/buero-reinigung-graz-team-oleria-desktop.webp",
                     "logo": {
                         "@type": "ImageObject",
                         "@id": "https://oleria.at/#logo",
-                        "url": "https://oleria.at/assets/images/oleria-logo-bueroreinigung-graz.png"
+                        "url": "https://oleria.at/assets/images/oleria-logo-bueroreinigung-graz.webp"
                     },
                     "address": {
                         "@type": "PostalAddress",
@@ -180,7 +180,7 @@
                     },
                     "primaryImageOfPage": {
                         "@type": "ImageObject",
-                        "url": "https://oleria.at/assets/images/buero-reinigung-graz-team-oleria-desktop.png"
+                        "url": "https://oleria.at/assets/images/buero-reinigung-graz-team-oleria-desktop.webp"
                     },
                     "inLanguage": "de-AT"
                 },
@@ -273,7 +273,7 @@
             </div>
             <div class="hero-visual">
                 <div class="hero-photo-card">
-                    <img src="assets/images/buero-reinigung-graz-team-oleria-desktop.png" alt="Team von Oleria – professionelle Büroreinigung in Graz">
+                    <img src="assets/images/buero-reinigung-graz-team-oleria-desktop.webp" alt="Team von Oleria – professionelle Büroreinigung in Graz">
                 </div>
             </div>
         </div>
@@ -367,7 +367,7 @@
                     </div>
                     <div class="proof-visual">
                         <div class="proof-image-placeholder">
-                            <img src="assets/images/dokumentierte-bueroreinigung-graz.png" alt="Dokumentierter Reinigungseinsatz bei einer Büroreinigung in Graz" loading="lazy">
+                            <img src="assets/images/dokumentierte-bueroreinigung-graz.webp" alt="Dokumentierter Reinigungseinsatz bei einer Büroreinigung in Graz" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -383,7 +383,7 @@
                     </div>
                     <div class="proof-visual">
                         <div class="proof-image-placeholder">
-                            <img src="assets/images/qualitaetskontrolle-bueroreinigung-graz.png" alt="Qualitätskontrolle einer Büroreinigung in Graz" loading="lazy">
+                            <img src="assets/images/qualitaetskontrolle-bueroreinigung-graz.webp" alt="Qualitätskontrolle einer Büroreinigung in Graz" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -398,7 +398,7 @@
                     </div>
                     <div class="proof-visual">
                         <div class="proof-image-placeholder">
-                            <img src="assets/images/bueroreinigung-graz-report-bericht.png" alt="Bericht und Reporting einer Büroreinigung in Graz" loading="lazy">
+                            <img src="assets/images/bueroreinigung-graz-report-bericht.webp" alt="Bericht und Reporting einer Büroreinigung in Graz" loading="lazy">
                         </div>
                     </div>
                 </div>
@@ -408,7 +408,7 @@
     <section class="section section-white" id="team">
         <div class="container flex-row">
             <div class="image-wrapper" aria-hidden="true">
-                <img src="assets/images/reinigungskraft-team-buero-reinigung-graz.png" alt="Professionelle Reinigungskraft in einem Büro in Graz" loading="lazy">
+                <img src="assets/images/reinigungskraft-team-buero-reinigung-graz.webp" alt="Professionelle Reinigungskraft in einem Büro in Graz" loading="lazy">
             </div>
             <div class="content">
                 <h2>Ein Team, das Ihrem Anspruch gerecht wird</h2>

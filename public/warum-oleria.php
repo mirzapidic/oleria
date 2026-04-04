@@ -17,7 +17,7 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Warum Oleria">
     <meta property="og:description" content="Büroreinigung in Graz anders strukturiert – mit klaren Abläufen und nachvollziehbarer Qualität.">
-    <meta property="og:image" content="https://oleria.at/assets/images/buero-reinigung-graz-team-oleria-desktop.png">
+    <meta property="og:image" content="https://oleria.at/assets/images/buero-reinigung-graz-team-oleria-desktop.webp">
 
     <script type="application/ld+json">
         {
@@ -41,8 +41,8 @@
         }
     </script>
 
-    <link rel="icon" href="/assets/images/oleria-favicon-32x32.png" sizes="32x32">
-    <link rel="apple-touch-icon" href="/assets/images/oleria-apple-touch-icon.png">
+    <link rel="icon" href="/assets/images/oleria-favicon-32x32.webp" sizes="32x32">
+    <link rel="apple-touch-icon" href="/assets/images/oleria-apple-touch-icon.webp">
 
     <link rel="stylesheet" href="/assets/css/main.css">
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js" defer></script>
