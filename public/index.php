@@ -199,16 +199,16 @@
             </p>
             <div class="cards" role="list">
                 <div class="card reveal reveal-delay-1" role="listitem">
-                    <div class="card-icon icon icon-md"><i data-feather="alert-circle"></i></div>
+                    <div class="card-icon icon icon-md"><i data-feather="shuffle"></i></div>
                     <h3>Unklare Abläufe, schwankende Qualität</h3>
                     <p>Ohne klare Systeme bleibt unklar, was tatsächlich erledigt wurde. Wechselnde Teams, fehlende Standards und mangelnde Kontrolle führen zu inkonstanten Ergebnissen.</p>
                 </div>
                 <div class="card reveal reveal-delay-2" role="listitem">
-                    <div class="card-icon icon icon-md"><i data-feather="users"></i></div>
+                    <div class="card-icon icon icon-md"><i data-feather="repeat"></i></div>
                     <h3>Zusätzlicher Koordinationsaufwand</h3>
                     <p>Rückfragen, Nachbesserungen und Abstimmungen kosten Zeit und Aufmerksamkeit. Fehlende Struktur führt zu zusätzlichem Aufwand, der interne Ressourcen bindet und vom Kerngeschäft ablenkt.</p>                </div>
                 <div class="card reveal reveal-delay-3" role="listitem">
-                    <div class="card-icon icon icon-md"><i data-feather="clock"></i></div>
+                    <div class="card-icon icon icon-md"><i data-feather="eye"></i></div>
                     <h3>Kein konstant professioneller Eindruck</h3>
                     <p>Ihr Büro ist Teil Ihrer Außenwirkung. Schwankende Sauberkeit führt schnell zu einem Eindruck, der nicht Ihrer tatsächlichen Qualität entspricht – besonders gegenüber Kunden und Besuchern.</p>                </div>
             </div>
@@ -232,7 +232,7 @@
                 <div class="offer-highlight-items">
                     <div class="offer-highlight-item">
                         <div class="offer-highlight-icon icon icon-xl">
-                            <i data-feather="sun"></i>
+                            <i data-feather="layers"></i>
                         </div>
                         <div class="offer-highlight-text">
                             <strong>Tiefreinigung über das Jahr eingeplant</strong>
@@ -357,7 +357,7 @@
                     </div>
                     <div class="feature">
                         <div class="feature-icon icon icon-md">
-                            <i data-feather="users"></i>
+                            <i data-feather="user-check"></i>
                         </div>
                         <div>
                             <h3>Konstante Teams</h3>
@@ -503,7 +503,7 @@
                         </div>
                     </div>
                     <div class="contact-benefit">
-                        <div class="contact-benefit-icon icon icon-sm"><i data-feather="zap"></i></div>
+                        <div class="contact-benefit-icon icon icon-sm"><i data-feather="settings"></i></div>
                         <div>
                             <strong>Einrichtung ohne Aufwand</strong>
                             <p>Strukturierter Start mit initialer Tiefreinigung auf Ihren gewünschten Standard.</p>
