@@ -99,7 +99,7 @@
                                 "name": "Österreich"
                             }
                         }
-                    ]
+                    ],
                     "hasOfferCatalog": {
                         "@type": "OfferCatalog",
                         "@id": "https://oleria.at/#offer-catalog",
@@ -466,15 +466,9 @@
                     Viele Reinigungsfirmen arbeiten ohne klare Systeme.
                     Das führt zu schwankender Qualität, fehlender Kontrolle und unnötigem Aufwand im Alltag.
                 </p>
-                <p class="why-oleria-text">
-                    Genau das haben wir bewusst anders aufgebaut – mit strukturierten Abläufen,
-                    nachvollziehbarer Dokumentation und klar definierten Standards.
-                </p>
-
+                <p class="why-oleria-text">Genau das haben wir bewusst anders aufgebaut – damit Qualität nicht dem Zufall überlassen wird.</p>
                 <div class="why-oleria-cta">
-                    <a href="/warum-oleria.php" class="btn navy-btn">
-                        Mehr erfahren
-                    </a>
+                    <a href="/warum-oleria.php" class="btn navy-btn">Mehr erfahren</a>
                 </div>
             </div>
         </div>
