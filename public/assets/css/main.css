@@ -367,7 +367,6 @@ header {
 @media (max-width: 580px) {
     header { padding: 5rem 0 2.5rem 0; }
     .hero-shell { padding: 0 4%; }
-    .hero-copy h1 { font-size: 1.95rem; }
     .hero-subline { font-size: 1.45rem; }
     .hero-qualifier {
         font-size: 1rem;
