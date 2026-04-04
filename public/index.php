@@ -371,6 +371,27 @@
             </div>
         </div>
     </section>
+    <section class="section section-light-accent" id="why-oleria">
+        <div class="container why-oleria-container">
+            <div class="why-oleria-content">
+                <h2>Warum Oleria anders arbeitet</h2>
+                <p class="why-oleria-text">
+                    Viele Reinigungsfirmen arbeiten ohne klare Systeme.
+                    Das führt zu schwankender Qualität, fehlender Kontrolle und unnötigem Aufwand im Alltag.
+                </p>
+                <p class="why-oleria-text">
+                    Genau das haben wir bewusst anders aufgebaut – mit strukturierten Abläufen,
+                    nachvollziehbarer Dokumentation und klar definierten Standards.
+                </p>
+
+                <div class="why-oleria-cta">
+                    <a href="/warum-oleria.php" class="btn navy-btn">
+                        Mehr erfahren
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="section section-white faq-section" id="faq">
         <div class="container ">
             <div class="faq-intro">

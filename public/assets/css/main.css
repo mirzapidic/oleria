@@ -80,6 +80,11 @@ svg.feather {
 }
 .inline-link .icon { transition: transform 0.2s ease; }
 .inline-link:hover .icon { transform: translateY(1px); }
+.navy-btn {
+    background: #0f2a44;
+    box-shadow: 0 10px 22px rgba(15,42,68,0.12);
+}
+.navy-btn:hover { background: #224769; }
 
 /* ##### responsive ##### */
 @media (min-width: 2560px) {
@@ -765,6 +770,83 @@ Team Section
 
 /*
 ################################
+Warum Oleria Page
+################################
+*/
+.why-page-container {
+    max-width: 820px;
+    align-items: stretch;
+}
+
+.why-page-intro {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.why-page-subtitle {
+    font-size: 1.5rem;
+    max-width: 640px;
+    margin: 0.5rem auto 0 auto;
+    color: rgba(10,37,64,0.7);
+    line-height: 1.6;
+}
+
+/* Blocks */
+
+.why-block {
+    margin-bottom: 3rem;
+}
+
+.why-block h2 {
+    margin-bottom: 0.9rem;
+}
+
+.why-block p {
+    margin: 0 0 1rem 0;
+    line-height: 1.65;
+    color: rgba(10,37,64,0.82);
+}
+
+/* Lists */
+
+.why-list {
+    margin: 1rem 0 1.5rem 1.2rem;
+    padding: 0;
+}
+
+.why-list li {
+    margin-bottom: 0.5rem;
+}
+
+/* Highlight section */
+
+.why-block-highlight {
+    background: rgba(10,37,64,0.03);
+    border: 1px solid rgba(10,37,64,0.08);
+    border-radius: 1.2rem;
+    padding: 1.8rem;
+}
+
+/* Closing */
+
+.why-block-closing {
+    text-align: center;
+}
+
+.why-cta {
+    margin-top: 2rem;
+}
+
+/* Mobile */
+
+@media (max-width: 640px) {
+    .why-block-highlight {
+        padding: 1.2rem;
+    }
+}
+
+/*
+################################
 FAQ Section
 ################################
 */
@@ -1319,12 +1401,6 @@ Legal Pages
     display: flex;
     justify-content: left;
 }
-.navy-btn {
-    background: linear-gradient(90deg, #0f2a44, #173a5c);
-    border-radius: 14px;
-    box-shadow: 0 10px 22px rgba(15,42,68,0.12);
-}
-.navy-btn:hover { background: linear-gradient(90deg, #173a5c, #224769); }
 
 /* ##### responsive ##### */
 @media (max-width: 640px) {
