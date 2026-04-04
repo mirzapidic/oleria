@@ -257,10 +257,7 @@
 </head>
 
 <body>
-    <?php
-    $isHomePage = True;
-    include __DIR__ . '/components/navbar.php';
-    ?>
+    <?php include __DIR__ . '/components/navbar.php'; ?>
     <header id="hero">
         <div class="hero-shell">
             <div class="hero-copy">

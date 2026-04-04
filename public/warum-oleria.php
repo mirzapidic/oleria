@@ -129,7 +129,7 @@
             </p>
 
             <div class="why-cta">
-                <a href="/index.php#contact" class="btn navy-btn">
+                <a href="/#contact" class="btn navy-btn">
                     Beratung vereinbaren
                 </a>
             </div>

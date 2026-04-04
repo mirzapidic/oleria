@@ -21,7 +21,7 @@
 <section class="legal-page">
     <div class="container legal-container">
         <div class="legal-actions">
-            <a href="/index.php" class="btn navy-btn">Zur Startseite</a>
+            <a href="/" class="btn navy-btn">Zur Startseite</a>
         </div>
         <div class="legal-header">
             <h1>Impressum</h1>
