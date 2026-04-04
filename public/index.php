@@ -463,10 +463,15 @@
             <div class="why-oleria-content">
                 <h2>Warum Oleria anders arbeitet</h2>
                 <p class="why-oleria-text">
-                    Viele Reinigungsfirmen arbeiten ohne klare Systeme.
-                    Das führt zu schwankender Qualität, fehlender Kontrolle und unnötigem Aufwand im Alltag.
+                    Gute Reinigung fällt im Alltag kaum auf.<br>
+                    Spürbar wird sie meist erst dann, wenn sie nicht zuverlässig funktioniert.
                 </p>
-                <p class="why-oleria-text">Genau das haben wir bewusst anders aufgebaut – damit Qualität nicht dem Zufall überlassen wird.</p>
+                <p class="why-oleria-text">
+                    Genau deshalb haben wir Oleria bewusst anders aufgebaut: mit klaren Abläufen, nachvollziehbaren Standards und einem System, das sich nahtlos in Ihren Büroalltag einfügt.</p>
+                <p class="why-oleria-text">
+                    So bleibt Reinigung dort, wo sie hingehört — im Hintergrund.<br>
+                    Und Sie können sich auf das konzentrieren, was für Ihr Unternehmen wirklich zählt.
+                </p>
                 <div class="why-oleria-cta">
                     <a href="/warum-oleria.php" class="btn navy-btn">Mehr erfahren</a>
                 </div>
