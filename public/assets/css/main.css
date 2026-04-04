@@ -252,12 +252,15 @@ header {
     position: relative;
     z-index: 2;
 }
-.hero-copy h1 {
+.hero-brand-line {
+    font-size: max(3vw, 3vh);
+    line-height: 1.05;
+    font-weight: 900;
+    margin: 0 0 1rem 0;
     z-index: 2;
     position: relative;
 }
 .hero-copy p {
-    color: rgba(11,35,66,0.82);
     margin-bottom: 2rem;
     position: relative;
     z-index: 2;
@@ -272,6 +275,7 @@ header {
     color: rgba(11,35,66,0.72);
     font-size: max(1.5vw, 1.5vh);
     margin-bottom: 2.2rem;
+    font-weight: normal;
 }
 .hero-actions {
     display: flex;

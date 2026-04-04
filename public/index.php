@@ -177,9 +177,9 @@
     <header id="hero">
         <div class="hero-shell">
             <div class="hero-copy">
-                <h1>Diskret. Nachvollziehbar. Verlässlich.</h1>
-                <p class="hero-subline">Reinigung, der Sie vertrauen können</p>
-                <p class="hero-qualifier">Büroreinigung für Unternehmen in Graz mit höchsten Ansprüchen.</p>
+                <p class="hero-brand-line">Diskret. Nachvollziehbar. Verlässlich.</p>
+                <p class="hero-subline">Reinigung mit System, Kontrolle und klaren Abläufen</p>
+                <h1 class="hero-qualifier">Büroreinigung für Unternehmen in Graz mit höchsten Ansprüchen</h1>
                 <div class="hero-actions">
                     <a href="#contact" class="btn header-btn">Beratung vereinbaren</a>
                 </div>
@@ -321,7 +321,7 @@
     <section class="section section-white" id="team">
         <div class="container flex-row">
             <div class="image-wrapper" aria-hidden="true">
-                <img src="assets/images/reinigungskraft-graz.png" alt="Professionelle Reinigungskraft in einem Büro in Graz" loading="lazy">
+                <img src="assets/images/reinigungskraft-team-buero-reinigung-graz.png" alt="Professionelle Reinigungskraft in einem Büro in Graz" loading="lazy">
             </div>
             <div class="content">
                 <h2>Ein Team, das Ihrem Anspruch gerecht wird</h2>
