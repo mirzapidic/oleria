@@ -838,7 +838,6 @@ FAQ Section
     }
 }
 @media (max-width: 480px) {
-    .faq-item summary { align-items: flex-start; }
     .faq-item summary::after { margin-top: 0.05rem; }
 }
 
