@@ -14,6 +14,7 @@ $homePrefix = $isHomePage ? '' : '/index.php';
         <li><a href="<?= $homePrefix ?>#offer">Leistung</a></li>
         <li><a href="<?= $homePrefix ?>#proof">Nachvollziehbarkeit</a></li>
         <li><a href="<?= $homePrefix ?>#team">Team</a></li>
+        <li><a href="<?= $homePrefix ?>/warum-oleria.php">Warum Oleria</a></li>
         <li><a href="<?= $homePrefix ?>#faq">Fragen</a></li>
         <li><a href="<?= $homePrefix ?>#contact">Kontakt</a></li>
     </ul>
