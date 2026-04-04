@@ -318,7 +318,7 @@
             </div>
         </div>
     </section>
-    <section class="section section-parchment" id="team">
+    <section class="section section-white" id="team">
         <div class="container flex-row">
             <div class="image-wrapper" aria-hidden="true">
                 <img src="assets/images/reinigungskraft-graz.png" alt="Professionelle Reinigungskraft in einem Büro in Graz" loading="lazy">
@@ -371,7 +371,7 @@
             </div>
         </div>
     </section>
-    <section class="section section-light-accent" id="why-oleria">
+    <section class="section section-parchment" id="why-oleria">
         <div class="container why-oleria-container">
             <div class="why-oleria-content">
                 <h2>Warum Oleria anders arbeitet</h2>
