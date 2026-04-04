@@ -11,37 +11,39 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://oleria.at/warum-oleria.php">
 
-    <meta name="geo.region" content="AT-6">
-    <meta name="geo.placename" content="Graz">
-
     <meta property="og:url" content="https://oleria.at/warum-oleria.php">
     <meta property="og:site_name" content="Oleria">
     <meta property="og:locale" content="de_AT">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Warum Oleria">
-    <meta property="og:description" content="Warum Oleria Büroreinigung in Graz anders strukturiert ist – mit klaren Abläufen und nachvollziehbarer Qualität.">
+    <meta property="og:description" content="Büroreinigung in Graz anders strukturiert – mit klaren Abläufen und nachvollziehbarer Qualität.">
     <meta property="og:image" content="https://oleria.at/assets/images/buero-reinigung-graz-team-oleria-desktop.png">
 
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
-            "@type": "WebPage",
-            "name": "Warum Oleria",
-            "description": "Warum Oleria Büroreinigung in Graz anders strukturiert ist – mit klaren Abläufen, Kontrolle und Transparenz.",
-            "inLanguage": "de-AT",
-            "mainEntity": {
-                "@type": "Organization",
-                "name": "Oleria",
-                "url": "https://oleria.at"
-            }
+            "@graph": [
+                {
+                    "@type": "WebPage",
+                    "@id": "https://oleria.at/warum-oleria.php#webpage",
+                    "url": "https://oleria.at/warum-oleria.php",
+                    "name": "Warum Oleria | Büroreinigung in Graz",
+                    "description": "Warum Oleria Büroreinigung in Graz anders arbeitet: strukturierte Abläufe, klare Kontrolle und verlässliche Ergebnisse für Unternehmen.",
+                    "isPartOf": {
+                        "@id": "https://oleria.at/#website"
+                    },
+                    "about": {
+                        "@id": "https://oleria.at/#localbusiness"
+                    },
+                    "inLanguage": "de-AT"
+                }
+            ]
         }
     </script>
 
-    <!-- Icons -->
     <link rel="icon" href="/assets/images/oleria-favicon-32x32.png" sizes="32x32">
     <link rel="apple-touch-icon" href="/assets/images/oleria-apple-touch-icon.png">
 
-    <!-- Styles & Scripts -->
     <link rel="stylesheet" href="/assets/css/main.css">
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js" defer></script>
     <script src="/assets/js/main.js" defer></script>

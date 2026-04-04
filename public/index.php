@@ -10,15 +10,12 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://oleria.at/">
 
-    <meta name="geo.region" content="AT-6">
-    <meta name="geo.placename" content="Graz">
-
     <meta property="og:url" content="https://oleria.at/">
     <meta property="og:site_name" content="Oleria">
     <meta property="og:locale" content="de_AT">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Oleria – Büroreinigung in Graz">
-    <meta property="og:description" content="Diskret. Nachvollziehbar. Verlässlich.">
+    <meta property="og:title" content="Büroreinigung Graz für Unternehmen | Oleria">
+    <meta property="og:description" content="Diskrete und nachvollziehbare Büroreinigung in Graz. Klare Abläufe, dokumentierte Einsätze und verlässliche Betreuung für Unternehmen.">
     <meta property="og:image" content="https://oleria.at/assets/images/group_photo_desktop.png">
 
     <link rel="icon" href="assets/images/oleria-favicon-32x32.png" sizes="32x32">
@@ -27,144 +24,234 @@
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
-            "@id": "https://oleria.at/#organization",
-            "@type": "LocalBusiness",
-            "name": "Oleria",
-            "legalName": "Pidic Facility Management GmbH",
-            "url": "https://oleria.at/",
-            "description": "Büroreinigung in Graz für Unternehmen. Diskret, nachvollziehbar und zuverlässig.",
-            "telephone": "+436765320111",
-            "email": "office@oleria.at",
-            "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "Neubaugasse 45",
-                "addressLocality": "Graz",
-                "postalCode": "8020",
-                "addressCountry": "AT"
-            },
-            "geo": {
-                "@type": "GeoCoordinates",
-                "latitude": 47.0707,
-                "longitude": 15.4395
-            },
-            "image": "https://oleria.at/assets/images/buero-reinigung-graz-team-oleria-desktop.png",
-            "logo": "https://oleria.at/assets/images/oleria-logo-bueroreinigung-graz.png",
-            "areaServed": {
-                "@type": "City",
-                "name": "Graz"
-            },
-            "openingHoursSpecification": [{
-                "@type": "OpeningHoursSpecification",
-                "dayOfWeek": [
-                    "Monday",
-                    "Tuesday",
-                    "Wednesday",
-                    "Thursday",
-                    "Friday"
-                ],
-                "opens": "08:00",
-                "closes": "18:30"
-            }],
-            "hasOfferCatalog": {
-                "@type": "OfferCatalog",
-                "name": "Reinigungsservices",
-                "itemListElement": [
-                    {
-                        "@type": "Offer",
-                        "itemOffered": {
-                            "@type": "Service",
-                            "name": "Büroreinigung",
-                            "serviceType": "Gewerbliche Büroreinigung"
-                        }
+            "@graph": [
+                {
+                    "@type": "LocalBusiness",
+                    "@id": "https://oleria.at/#localbusiness",
+                    "name": "Oleria",
+                    "alternateName": "Pidic Facility Management GmbH",
+                    "legalName": "Pidic Facility Management GmbH",
+                    "url": "https://oleria.at/",
+                    "email": "office@oleria.at",
+                    "telephone": "+436765320111",
+                    "description": "Oleria bietet Büroreinigung in Graz für Unternehmen. Der Fokus liegt auf diskreter, nachvollziehbarer und verlässlicher Reinigung mit klaren Abläufen, dokumentierten Einsätzen und vollständiger Betreuung.",
+                    "image": "https://oleria.at/assets/images/buero-reinigung-graz-team-oleria-desktop.png",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "@id": "https://oleria.at/#logo",
+                        "url": "https://oleria.at/assets/images/oleria-logo-bueroreinigung-graz.png"
                     },
-                    {
-                        "@type": "Offer",
-                        "itemOffered": {
-                            "@type": "Service",
-                            "name": "Unterhaltsreinigung",
-                            "serviceType": "Regelmäßige Reinigung von Büros"
-                        }
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "Neubaugasse 45",
+                        "postalCode": "8020",
+                        "addressLocality": "Graz",
+                        "addressRegion": "Steiermark",
+                        "addressCountry": "AT"
                     },
-                    {
-                        "@type": "Offer",
-                        "itemOffered": {
-                            "@type": "Service",
-                            "name": "Tiefreinigung",
-                            "serviceType": "Geplante Grund- und Tiefreinigung"
+                    "geo": {
+                        "@type": "GeoCoordinates",
+                        "latitude": 47.0707,
+                        "longitude": 15.4395
+                    },
+                    "areaServed": [
+                        {
+                            "@type": "City",
+                            "name": "Graz"
                         }
-                    }
-                ]
-            }
-        }
-    </script>
-
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": [
-                {
-                    "@type": "Question",
-                    "name": "Was ist im Service genau enthalten?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Unser Service umfasst die laufende Büroreinigung im Alltag sowie alle strukturierten Abläufe rundherum: dokumentierte Einsätze, Qualitätskontrollen, transparente Berichte und – je nach Vereinbarung – zusätzliche Leistungen wie eingeplante Tiefreinigung und diskrete Aktenvernichtung."
+                    ],
+                    "contactPoint": [
+                        {
+                            "@type": "ContactPoint",
+                            "telephone": "+436765320111",
+                            "email": "office@oleria.at",
+                            "contactType": "customer service",
+                            "areaServed": "AT",
+                            "availableLanguage": ["de", "en"]
+                        }
+                    ],
+                    "openingHoursSpecification": [
+                        {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": [
+                                "Monday",
+                                "Tuesday",
+                                "Wednesday",
+                                "Thursday",
+                                "Friday"
+                            ],
+                            "opens": "08:00",
+                            "closes": "18:30"
+                        }
+                    ],
+                    "priceRange": "€€",
+                    "hasCredential": [
+                        {
+                            "@type": "EducationalOccupationalCredential",
+                            "name": "Meisterbetrieb Gebäudereinigung",
+                            "credentialCategory": "Berufliche Qualifikation",
+                            "recognizedBy": {
+                                "@type": "Organization",
+                                "name": "Wirtschaftskammer Österreich"
+                            },
+                            "validFor": {
+                                "@type": "AdministrativeArea",
+                                "name": "Österreich"
+                            }
+                        }
+                    ]
+                    "hasOfferCatalog": {
+                        "@type": "OfferCatalog",
+                        "@id": "https://oleria.at/#offer-catalog",
+                        "name": "Reinigungsservices",
+                        "itemListElement": [
+                            {
+                                "@type": "Offer",
+                                "itemOffered": {
+                                    "@type": "Service",
+                                    "@id": "https://oleria.at/#service-bueroreinigung",
+                                    "name": "Büroreinigung",
+                                    "serviceType": "Büroreinigung für Unternehmen in Graz",
+                                    "areaServed": {
+                                        "@type": "City",
+                                        "name": "Graz"
+                                    },
+                                    "provider": {
+                                        "@id": "https://oleria.at/#localbusiness"
+                                    }
+                                }
+                            },
+                            {
+                                "@type": "Offer",
+                                "itemOffered": {
+                                    "@type": "Service",
+                                    "@id": "https://oleria.at/#service-unterhaltsreinigung",
+                                    "name": "Unterhaltsreinigung",
+                                    "serviceType": "Regelmäßige Unterhaltsreinigung für Büros",
+                                    "areaServed": {
+                                        "@type": "City",
+                                        "name": "Graz"
+                                    },
+                                    "provider": {
+                                        "@id": "https://oleria.at/#localbusiness"
+                                    }
+                                }
+                            },
+                            {
+                                "@type": "Offer",
+                                "itemOffered": {
+                                    "@type": "Service",
+                                    "@id": "https://oleria.at/#service-tiefreinigung",
+                                    "name": "Tiefreinigung",
+                                    "serviceType": "Geplante Tiefreinigung und Grundreinigung für Büros",
+                                    "areaServed": {
+                                        "@type": "City",
+                                        "name": "Graz"
+                                    },
+                                    "provider": {
+                                        "@id": "https://oleria.at/#localbusiness"
+                                    }
+                                }
+                            }
+                        ]
                     }
                 },
                 {
-                    "@type": "Question",
-                    "name": "Muss ich die Reinigung laufend koordinieren?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Nein. Genau dafür ist unser System gedacht. Wir übernehmen Planung, Durchführung, Kontrolle und Dokumentation, sodass Sie sich nicht laufend um Nachfragen, Zusatzaufträge oder Erinnerungen kümmern müssen."
+                    "@type": "WebSite",
+                    "@id": "https://oleria.at/#website",
+                    "url": "https://oleria.at/",
+                    "name": "Oleria",
+                    "inLanguage": "de-AT",
+                    "publisher": {
+                        "@id": "https://oleria.at/#localbusiness"
                     }
                 },
                 {
-                    "@type": "Question",
-                    "name": "Wie schnell kann die Betreuung starten?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "In der Regel innerhalb weniger Tage. Nach einem kurzen Abstimmungsgespräch richten wir die Abläufe für Ihr Büro ein und starten direkt mit einem strukturierten Beginn – auf Wunsch inklusive initialer Tiefreinigung."
-                    }
+                    "@type": "WebPage",
+                    "@id": "https://oleria.at/#webpage",
+                    "url": "https://oleria.at/",
+                    "name": "Büroreinigung Graz | Oleria - Diskret & Nachvollziehbar",
+                    "description": "Büroreinigung in Graz für Unternehmen. Diskret, nachvollziehbar und zuverlässig – mit klaren Abläufen, dokumentierten Einsätzen und vollständiger Betreuung.",
+                    "isPartOf": {
+                        "@id": "https://oleria.at/#website"
+                    },
+                    "about": {
+                        "@id": "https://oleria.at/#localbusiness"
+                    },
+                    "primaryImageOfPage": {
+                        "@type": "ImageObject",
+                        "url": "https://oleria.at/assets/images/buero-reinigung-graz-team-oleria-desktop.png"
+                    },
+                    "inLanguage": "de-AT"
                 },
                 {
-                    "@type": "Question",
-                    "name": "Gibt es eine langfristige vertragliche Bindung?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Im ersten Monat arbeiten wir ohne langfristige Bindung. So können Sie unseren Service im laufenden Betrieb erleben und prüfen, ob er zu Ihrem Büro passt. Erst danach entscheiden wir gemeinsam über die weitere Zusammenarbeit."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Wie stelle ich sicher, dass die Qualität konstant bleibt?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Jeder Einsatz wird dokumentiert, kontrolliert und ausgewertet. Zusätzlich arbeiten wir mit klaren Standards, festen Verantwortlichkeiten und internen Leistungsbewertungen, sodass Qualität nicht dem Zufall überlassen wird."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Wer hat Zugang zu unseren Räumlichkeiten?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Ihr Büro wird von sorgfältig ausgewählten und geschulten Fachkräften betreut, die in Diskretion, Auftreten und Verhalten im Büroalltag trainiert sind. Durch konstante Teams bleibt der Zugang überschaubar und nachvollziehbar."
-                    }
-                },
-                {
-                    "@type": "Question",
-                    "name": "Was kostet die Büroreinigung?",
-                    "acceptedAnswer": {
-                        "@type": "Answer",
-                        "text": "Das hängt von Größe, Nutzung und Anforderungen Ihres Büros ab. Unser Ansatz ist nicht nur auf einzelne Reinigungseinsätze ausgelegt, sondern auf eine vollständige Betreuung mit klaren Abläufen und geringem Koordinationsaufwand. Gerne erstellen wir dafür eine individuelle Einschätzung."
-                    }
+                    "@type": "FAQPage",
+                    "@id": "https://oleria.at/#faqpage",
+                    "url": "https://oleria.at/#faq",
+                    "mainEntity": [
+                        {
+                            "@type": "Question",
+                            "name": "Was ist im Service genau enthalten?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Unser Service umfasst die laufende Büroreinigung im Alltag sowie alle strukturierten Abläufe rundherum: dokumentierte Einsätze, Qualitätskontrollen, transparente Berichte und – je nach Vereinbarung – zusätzliche Leistungen wie eingeplante Tiefreinigung und diskrete Aktenvernichtung."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "Muss ich die Reinigung laufend koordinieren?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Nein. Genau dafür ist unser System gedacht. Wir übernehmen Planung, Durchführung, Kontrolle und Dokumentation, sodass Sie sich nicht laufend um Nachfragen, Zusatzaufträge oder Erinnerungen kümmern müssen."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "Wie schnell kann die Betreuung starten?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "In der Regel innerhalb weniger Tage. Nach einem kurzen Abstimmungsgespräch richten wir die Abläufe für Ihr Büro ein und starten direkt mit einem strukturierten Beginn – auf Wunsch inklusive initialer Tiefreinigung."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "Gibt es eine langfristige vertragliche Bindung?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Im ersten Monat arbeiten wir ohne langfristige Bindung. So können Sie unseren Service im laufenden Betrieb erleben und prüfen, ob er zu Ihrem Büro passt. Erst danach entscheiden wir gemeinsam über die weitere Zusammenarbeit."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "Wie stelle ich sicher, dass die Qualität konstant bleibt?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Jeder Einsatz wird dokumentiert, kontrolliert und ausgewertet. Zusätzlich arbeiten wir mit klaren Standards, festen Verantwortlichkeiten und internen Leistungsbewertungen, sodass Qualität nicht dem Zufall überlassen wird."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "Wer hat Zugang zu unseren Räumlichkeiten?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Ihr Büro wird von sorgfältig ausgewählten und geschulten Fachkräften betreut, die in Diskretion, Auftreten und Verhalten im Büroalltag trainiert sind. Durch konstante Teams bleibt der Zugang überschaubar und nachvollziehbar."
+                            }
+                        },
+                        {
+                            "@type": "Question",
+                            "name": "Was kostet die Büroreinigung?",
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": "Das hängt von Größe, Nutzung und Anforderungen Ihres Büros ab. Unser Ansatz ist nicht nur auf einzelne Reinigungseinsätze ausgelegt, sondern auf eine vollständige Betreuung mit klaren Abläufen und geringem Koordinationsaufwand. Gerne erstellen wir dafür eine individuelle Einschätzung."
+                            }
+                        }
+                    ]
                 }
             ]
         }
     </script>
 
     <link rel="stylesheet" href="assets/css/main.css">
-
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js" defer></script>
     <script src="assets/js/main.js" defer></script>
 </head>

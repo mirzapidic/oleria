@@ -38,13 +38,27 @@
                 </p>
             </div>
         </div>
-        <div class="footer-column footer-column-logo">
+        <div class="footer-column">
             <div class="footer-column-content">
-                <img src="/assets/images/meisterbetrieb-gebaeudereinigung.png"
-                     alt="Meisterbetrieb Gebäudereinigung"
-                     class="footer-logo"
-                     loading="lazy">
+                <div class="footer-certificate-logo-container">
+                    <img src="/assets/images/meisterbetrieb-gebaeudereinigung.png"
+                         alt="WKO Meisterbetrieb Gebäudereinigung"
+                         class="footer-certificate-logo"
+                         loading="lazy"
+                    >
+                </div>
+                <p>
+                    Oleria ist Meisterbetrieb der Gebäudereinigung.
+                    Das steht für fachliche Qualifikation, klare Standards und verlässliche Betreuung.
+                    <a href="https://www.wko.at/weiterbildung/guetesiegel-meisterbetrieb#wer_darf_das_siegel_fuehren"
+                       target="_blank"
+                       rel="noopener"
+                       class="footer-link">
+                        Was ein Meisterbetrieb laut WKO bedeutet
+                    </a>
+                </p>
             </div>
+
         </div>
     </div>
     <div class="footer-bottom">

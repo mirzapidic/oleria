@@ -4,11 +4,8 @@
 
     <title><?= htmlspecialchars($pageTitle ?? 'Oleria') ?></title>
     <meta name="description" content="<?= htmlspecialchars($pageDescription ?? '') ?>">
-    <meta name="robots" content="index, follow">
+    <meta name="robots" content="<?= htmlspecialchars($pageRobots ?? 'index, follow') ?>">
     <link rel="canonical" href="<?= htmlspecialchars($pageCanonical ?? 'https://oleria.at/') ?>">
-
-    <meta name="geo.region" content="AT-6">
-    <meta name="geo.placename" content="Graz">
 
     <meta property="og:url" content="<?= htmlspecialchars($pageCanonical ?? 'https://oleria.at/') ?>">
     <meta property="og:site_name" content="Oleria">
@@ -18,38 +15,98 @@
     <meta property="og:description" content="<?= htmlspecialchars($pageDescription ?? '') ?>">
     <meta property="og:image" content="<?= htmlspecialchars($pageOgImage ?? 'https://oleria.at/assets/images/buero-reinigung-graz-team-oleria-desktop.png') ?>">
 
-    <link rel="icon" href="../assets/images/oleria-favicon-32x32.png" sizes="32x32">
-    <link rel="apple-touch-icon" href="../assets/images/oleria-apple-touch-icon.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<?= htmlspecialchars($pageTitle ?? 'Oleria') ?>">
+    <meta name="twitter:description" content="<?= htmlspecialchars($pageDescription ?? '') ?>">
+    <meta name="twitter:image" content="<?= htmlspecialchars($pageOgImage ?? 'https://oleria.at/assets/images/buero-reinigung-graz-team-oleria-desktop.png') ?>">
+
+    <link rel="icon" href="/assets/images/oleria-favicon-32x32.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="/assets/images/oleria-apple-touch-icon.png">
+
+    <?php
+    $schemaPageTitle = $pageTitle ?? 'Oleria';
+    $schemaDescription = $pageDescription ?? '';
+    $schemaCanonical = $pageCanonical ?? 'https://oleria.at/';
+    $schemaOgImage = $pageOgImage ?? 'https://oleria.at/assets/images/buero-reinigung-graz-team-oleria-desktop.png';
+    $schemaHeadline = $articleHeadline ?? $schemaPageTitle;
+
+    $schemaDatePublished = $articleDatePublished ?? null;
+    $schemaDateModified = $articleDateModified ?? $schemaDatePublished;
+
+    $graph = array_values(array_filter([
+            [
+                    '@type' => 'WebPage',
+                    '@id' => $schemaCanonical . '#webpage',
+                    'url' => $schemaCanonical,
+                    'name' => $schemaPageTitle,
+                    'description' => $schemaDescription,
+                    'isPartOf' => [
+                            '@id' => 'https://oleria.at/#website'
+                    ],
+                    'about' => [
+                            '@id' => 'https://oleria.at/#localbusiness'
+                    ],
+                    'primaryImageOfPage' => [
+                            '@type' => 'ImageObject',
+                            '@id' => $schemaCanonical . '#primaryimage',
+                            'url' => $schemaOgImage
+                    ],
+                    'inLanguage' => 'de-AT'
+            ],
+            [
+                    '@type' => 'BlogPosting',
+                    '@id' => $schemaCanonical . '#blogposting',
+                    'mainEntityOfPage' => [
+                            '@id' => $schemaCanonical . '#webpage'
+                    ],
+                    'headline' => $schemaHeadline,
+                    'description' => $schemaDescription,
+                    'image' => [
+                            '@id' => $schemaCanonical . '#primaryimage'
+                    ],
+                    'author' => [
+                            '@type' => 'Organization',
+                            '@id' => 'https://oleria.at/#localbusiness',
+                            'name' => 'Oleria'
+                    ],
+                    'publisher' => [
+                            '@type' => 'Organization',
+                            '@id' => 'https://oleria.at/#localbusiness',
+                            'name' => 'Oleria',
+                            'logo' => [
+                                    '@type' => 'ImageObject',
+                                    '@id' => 'https://oleria.at/#logo',
+                                    'url' => 'https://oleria.at/assets/images/oleria-logo-bueroreinigung-graz.png'
+                            ]
+                    ],
+                    'inLanguage' => 'de-AT',
+                    'about' => [
+                            [
+                                    '@type' => 'Thing',
+                                    'name' => 'Büroreinigung'
+                            ],
+                            [
+                                    '@type' => 'Thing',
+                                    'name' => 'Graz'
+                            ]
+                    ],
+                    'articleSection' => $articleSection ?? 'Büroreinigung',
+                    'keywords' => $articleKeywords ?? null,
+                    'datePublished' => $schemaDatePublished,
+                    'dateModified' => $schemaDateModified
+            ]
+    ]));
+    ?>
 
     <script type="application/ld+json">
-        {
-          "@context": "https://schema.org",
-          "@type": "Article",
-          "headline": "<?= json_encode($articleHeadline ?? '') ?>",
-          "description": "<?= json_encode($pageDescription ?? '') ?>",
-          "inLanguage": "de-AT",
-          "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": "<?= json_encode($pageCanonical ?? 'https://oleria.at/') ?>"
-            },
-            "author": {
-              "@type": "Organization",
-              "name": "Oleria"
-            },
-            "publisher": {
-              "@type": "Organization",
-              "name": "Oleria",
-              "logo": {
-                "@type": "ImageObject",
-                "url": "https://oleria.at/assets/images/oleria-logo-bueroreinigung-graz.png"
-              }
-            },
-            "image": "<?= json_encode($pageOgImage ?? 'https://oleria.at/assets/images/buero-reinigung-graz-team-oleria-desktop.png') ?>"
-        }
+    <?= json_encode([
+                    '@context' => 'https://schema.org',
+                    '@graph' => $graph
+            ], JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) ?>
     </script>
 
-    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
 
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js" defer></script>
-    <script src="../assets/js/main.js" defer></script>
+    <script src="/assets/js/main.js" defer></script>
 </head>

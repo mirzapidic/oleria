@@ -1,11 +1,19 @@
 <?php
-$pageTitle = "Was kostet Büroreinigung in Graz? | Oleria";
-$pageDescription = "Was kostet Büroreinigung in Graz? Ein Überblick über Preisfaktoren, Leistungsumfang und worauf Unternehmen bei der Auswahl achten sollten.";
+$pageTitle = "Warum Unternehmen bei Reinigung oft am falschen Ende sparen (same as h1 tag!!!!)";
+$pageDescription = "Some sample description";
 $pageCanonical = "https://oleria.at/articles/was-kostet-bueroreinigung-graz";
 $pageOgType = "article";
 $pageOgImage = "https://oleria.at/assets/images/buero-reinigung-graz-team-oleria-desktop.png";
 $articleHeadline = "Was kostet Büroreinigung in Graz?";
-include __DIR__ . "/../components/head-article.php";
+$articleSection = "Büroreinigung";
+$articleKeywords = [
+        "Büroreinigung Graz",
+        "Büroreinigung Kosten Graz",
+        "Kosten Büroreinigung",
+        "Reinigungsfirma Graz"
+];
+$articleDatePublished = null;
+$articleDateModified = null;
 ?>
 
 <!DOCTYPE html>
