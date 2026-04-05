@@ -17,14 +17,18 @@
         <div class="footer-column">
             <div class="footer-column-content">
                 <h4>Kontakt</h4>
-                <p>
-                    Telefon:<br>
-                    <a href="tel:+436765320111" class="footer-link">+43 676 5320111</a>
-                </p>
-                <p>
-                    E-Mail:<br>
-                    <a href="mailto:office@oleria.at" class="footer-link">office@oleria.at</a>
-                </p>
+                <a href="tel:+436765320111" class="footer-link inline-link">
+                    <span class="icon icon-sm">
+                        <i data-feather="phone"></i>
+                    </span>
+                    +43 676 5320111
+                </a><br>
+                <a href="mailto:office@oleria.at" class="footer-link inline-link">
+                    <span class="icon icon-sm">
+                        <i data-feather="mail"></i>
+                    </span>
+                    office@oleria.at
+                </a>
                 <p style="margin-top: 1rem;">Mo–Fr: 08:00–18:30</p>
             </div>
         </div>
