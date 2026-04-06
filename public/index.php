@@ -304,7 +304,7 @@
             <p class="offer-premise">Vollständig betreut statt laufend organisiert</p>
             <h2>Ein System, das Ihr Büro dauerhaft gepflegt hält</h2>
             <p class="offer-description">
-                Unsere Betreuung endet nicht bei der laufenden Reinigung.
+                Unsere Betreuung endet nicht bei der laufenden Unterhaltsreinigung.
                 Wir übernehmen auch die Leistungen und Abläufe, die in vielen Büros sonst separat geplant,
                 nachverfolgt oder zusätzlich beauftragt werden müssen.
             </p>
