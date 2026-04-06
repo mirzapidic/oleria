@@ -305,8 +305,7 @@
             <h2>Ein System, das Ihr Büro dauerhaft gepflegt hält</h2>
             <p class="offer-description">
                 Unsere Betreuung endet nicht bei der laufenden Unterhaltsreinigung.
-                Sie ist so aufgebaut, dass alle Leistungen – auch aufwändigere Arbeiten –
-                bereits eingeplant sind und nicht separat organisiert werden müssen.
+                Sie ist so aufgebaut, dass alle Leistungen bereits eingeplant sind und nicht separat organisiert werden müssen.
             </p>
             <div class="offer-highlight">
                 <div class="offer-highlight-title">Mehr als laufende Unterhaltsreinigung</div>
@@ -319,8 +318,8 @@
                             <strong>Dokumentierte Qualität im laufenden Betrieb</strong>
                             <p>
                                 Jeder Einsatz folgt klaren Abläufen, wird nachvollziehbar festgehalten
-                                und regelmäßig überprüft — damit Qualität nicht vom Zufall,
-                                sondern von einem funktionierenden System abhängt.
+                                und regelmäßig überprüft. So hängt Qualität nicht vom Zufall ab,
+                                sondern von einem funktionierenden System.
                             </p>
                         </div>
                     </div>
@@ -332,8 +331,8 @@
                             <strong>Eingeplante Tiefreinigung über das Jahr</strong>
                             <p>
                                 Teppiche, Möbel, Fenster, Sanitärbereiche und andere aufwändigere Leistungen
-                                werden regelmäßig mitberücksichtigt — nicht erst dann, wenn sie gesondert
-                                organisiert werden müssen.
+                                werden regelmäßig mitberücksichtigt. Sie müssen nicht erst dann organisiert werden,
+                                wenn sie akut anfallen.
                             </p>
                         </div>
                     </div>
