@@ -194,7 +194,7 @@
                             "name": "Was ist im Service genau enthalten?",
                             "acceptedAnswer": {
                                 "@type": "Answer",
-                                "text": "Unser Service umfasst die laufende Büroreinigung im Alltag sowie alle strukturierten Abläufe rundherum: dokumentierte Einsätze, Qualitätskontrollen, transparente Berichte und – je nach Vereinbarung – zusätzliche Leistungen wie eingeplante Tiefreinigung und diskrete Aktenvernichtung."
+                                "text": "Unser Service umfasst die laufende Büroreinigung im Alltag sowie alle strukturierten Abläufe rundherum: dokumentierte Einsätze, Qualitätskontrollen, transparente Berichte und eingeplante Tiefreinigung, damit auch aufwändigere Leistungen nicht separat organisiert werden müssen."
                             }
                         },
                         {
@@ -305,12 +305,25 @@
             <h2>Ein System, das Ihr Büro dauerhaft gepflegt hält</h2>
             <p class="offer-description">
                 Unsere Betreuung endet nicht bei der laufenden Unterhaltsreinigung.
-                Wir übernehmen auch die Leistungen und Abläufe, die in vielen Büros sonst separat geplant,
-                nachverfolgt oder zusätzlich beauftragt werden müssen.
+                Sie ist so aufgebaut, dass alle Leistungen – auch aufwändigere Arbeiten –
+                bereits eingeplant sind und nicht separat organisiert werden müssen.
             </p>
             <div class="offer-highlight">
-                <div class="offer-highlight-title">Im laufenden Service bereits mitgedacht</div>
+                <div class="offer-highlight-title">Mehr als laufende Unterhaltsreinigung</div>
                 <div class="offer-highlight-items">
+                    <div class="offer-highlight-item">
+                        <div class="offer-highlight-icon icon icon-xl">
+                            <i data-feather="clipboard"></i>
+                        </div>
+                        <div class="offer-highlight-text">
+                            <strong>Dokumentierte Qualität im laufenden Betrieb</strong>
+                            <p>
+                                Jeder Einsatz folgt klaren Abläufen, wird nachvollziehbar festgehalten
+                                und regelmäßig überprüft — damit Qualität nicht vom Zufall,
+                                sondern von einem funktionierenden System abhängt.
+                            </p>
+                        </div>
+                    </div>
                     <div class="offer-highlight-item">
                         <div class="offer-highlight-icon icon icon-xl">
                             <i data-feather="layers"></i>
@@ -324,24 +337,12 @@
                             </p>
                         </div>
                     </div>
-                    <div class="offer-highlight-item">
-                        <div class="offer-highlight-icon icon icon-xl">
-                            <i data-feather="lock"></i>
-                        </div>
-                        <div class="offer-highlight-text">
-                            <strong>Diskrete Aktenvernichtung integriert</strong>
-                            <p>
-                                Sensible Dokumente werden bei Bedarf direkt mit übernommen —
-                                ohne zusätzlichen Dienstleister, ohne separate Abstimmung,
-                                ohne weiteren organisatorischen Aufwand.
-                            </p>
-                        </div>
-                    </div>
                 </div>
             </div>
             <p class="offer-closing">
-                Unsere Betreuung ist so aufgebaut, dass Reinigung im Alltag nicht organisiert,
-                nachverfolgt oder ergänzt werden muss — sondern zuverlässig im Hintergrund funktioniert.
+                Sie erhalten eine strukturierte Betreuung mit einem klar kalkulierbarem monatlichem Aufwand —
+                ohne zusätzliche Abstimmungen und ungeplante Zusatzleistungen.
+                Reinigung funktioniert im Hintergrund, während Sie sich auf Ihr Unternehmen konzentrieren.
             </p>
         </div>
     </section>
@@ -491,8 +492,8 @@
                     <div class="faq-answer">
                         <p>
                             Unser Service umfasst die laufende Büroreinigung im Alltag sowie alle strukturierten Abläufe rundherum:
-                            dokumentierte Einsätze, Qualitätskontrollen, transparente Berichte und – je nach Vereinbarung –
-                            zusätzliche Leistungen wie eingeplante Tiefreinigung und diskrete Aktenvernichtung.
+                            dokumentierte Einsätze, Qualitätskontrollen, transparente Berichte und eingeplante Tiefreinigung,
+                            damit auch aufwändigere Leistungen nicht separat organisiert werden müssen.
                         </p>
                     </div>
                 </details>
