@@ -444,7 +444,6 @@ Problem Section
     box-sizing: border-box;
     transition: box-shadow 0.25s ease, border-color 0.25s ease;
 }
-.card:hover { box-shadow: 0 14px 30px rgba(10, 37, 64, 0.06); }
 .card-icon {
     font-size: 2rem;
     color: #7fd1d3;
