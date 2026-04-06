@@ -301,28 +301,26 @@
     <section class="section offer-bg-section" id="offer">
         <div class="offer-bg-overlay"></div>
         <div class="container offer-bg-content">
-            <p class="offer-premise">
-                Vollständig betreut, statt laufend organisiert
-            </p>
-            <h2>Ein System, das Ihr Büro vollständig betreut</h2>
+            <p class="offer-premise">Vollständig betreut statt laufend organisiert</p>
+            <h2>Ein System, das Ihr Büro dauerhaft gepflegt hält</h2>
             <p class="offer-description">
-                Neben der regelmäßigen Reinigung übernehmen wir auch die Themen,
-                die sonst zusätzlich geplant, koordiniert und beauftragt werden müssten.
+                Unsere Betreuung endet nicht bei der laufenden Reinigung.
+                Wir übernehmen auch die Leistungen und Abläufe, die in vielen Büros sonst separat geplant,
+                nachverfolgt oder zusätzlich beauftragt werden müssen.
             </p>
             <div class="offer-highlight">
-                <div class="offer-highlight-title">
-                    Ein Schritt weiter gedacht
-                </div>
+                <div class="offer-highlight-title">Im laufenden Service bereits mitgedacht</div>
                 <div class="offer-highlight-items">
                     <div class="offer-highlight-item">
                         <div class="offer-highlight-icon icon icon-xl">
                             <i data-feather="layers"></i>
                         </div>
                         <div class="offer-highlight-text">
-                            <strong>Tiefreinigung über das Jahr eingeplant</strong>
+                            <strong>Eingeplante Tiefreinigung über das Jahr</strong>
                             <p>
-                                Teppiche, Möbel, Fenster und schwer erreichbare Bereiche werden
-                                regelmäßig mit berücksichtigt – für ein dauerhaft gepflegtes Gesamtbild.
+                                Teppiche, Möbel, Fenster, Sanitärbereiche und andere aufwändigere Leistungen
+                                werden regelmäßig mitberücksichtigt — nicht erst dann, wenn sie gesondert
+                                organisiert werden müssen.
                             </p>
                         </div>
                     </div>
@@ -331,17 +329,19 @@
                             <i data-feather="lock"></i>
                         </div>
                         <div class="offer-highlight-text">
-                            <strong>Diskrete Aktenvernichtung inklusive</strong>
+                            <strong>Diskrete Aktenvernichtung integriert</strong>
                             <p>
-                                Sensible Dokumente werden bei Bedarf direkt mit übernommen –
-                                ohne zusätzlichen Dienstleister oder Abstimmung.
+                                Sensible Dokumente werden bei Bedarf direkt mit übernommen —
+                                ohne zusätzlichen Dienstleister, ohne separate Abstimmung,
+                                ohne weiteren organisatorischen Aufwand.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
             <p class="offer-closing">
-                Alles läuft in einem klar strukturierten System – damit Qualität nicht dem Zufall überlassen wird.
+                Unsere Betreuung ist so aufgebaut, dass Reinigung im Alltag nicht organisiert,
+                nachverfolgt oder ergänzt werden muss — sondern zuverlässig im Hintergrund funktioniert.
             </p>
         </div>
     </section>
