@@ -262,10 +262,10 @@
         <div class="hero-shell">
             <div class="hero-copy">
                 <p class="hero-brand-line">Diskret. Nachvollziehbar. Verlässlich.</p>
-                <p class="hero-subline">Reinigung mit System, Kontrolle und klaren Abläufen</p>
-                <h1 class="hero-qualifier">Büroreinigung für Unternehmen in Graz mit höchsten Ansprüchen</h1>
+                <p class="hero-subline">Reinigung mit System, Kontrolle und dokumentierten Einsätzen</p>
+                <h1 class="hero-qualifier">Büroreinigung in Graz für Unternehmen – gepflegter Standard ohne laufende Abstimmung und Nachkontrolle</h1>
                 <div class="hero-actions">
-                    <a href="#contact" class="btn header-btn">Beratung vereinbaren</a>
+                    <a href="#contact" class="btn header-btn">Unverbindlich anfragen</a>
                 </div>
             </div>
             <div class="hero-visual">
@@ -582,7 +582,7 @@
                         <div class="contact-benefit-icon icon icon-sm"><i data-feather="clock"></i></div>
                         <div>
                             <strong>Schnelle Rückmeldung</strong>
-                            <p>Wir melden uns innerhalb von 24 Stunden bei Ihnen zurück.</p>
+                            <p>Wir melden uns am selben Tag bei Ihnen zurück.</p>
                         </div>
                     </div>
                     <div class="contact-benefit">
