@@ -488,13 +488,12 @@ Why Oleria
 */
 /* ##### homepage section ##### */
 .why-oleria-container {
-    max-width: 780px;
+    max-width: 50%;
     text-align: center;
 }
 .why-oleria-content h2 { margin-bottom: 1.2rem; }
 .why-oleria-text {
     margin: 0 auto 1rem auto;
-    max-width: 620px;
     color: rgba(10,37,64,0.78);
     line-height: 1.6;
 }
@@ -542,22 +541,13 @@ FAQ Section
 ################################
 */
 .faq-section { padding-bottom: 0; }
-.faq-section .container {
-    display: grid;
-    grid-template-columns: 0.35fr 0.65fr;
-    align-items: start;
-    gap: 5rem;
-}
 .faq-intro {
-    text-align: left;
-    margin-bottom: 0;
-}
-.faq-intro .section-subtitle {
-    text-align: left;
-    margin-bottom: 0;
+    text-align: center;
+    margin-bottom: 2.5rem;
 }
 .faq-list {
-    width: 100%;
+    width: 50%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 0;
@@ -1201,6 +1191,7 @@ Responsive: Desktop, Tablet, Mobile
     }
     .proof-image-placeholder { height: 180px; }
     .faq-intro { margin-bottom: 1.75rem; }
+    .faq-list { width: 100%; }
     .faq-item summary {
         padding: 0.9rem 0;
         font-size: 0.98rem;
@@ -1210,14 +1201,6 @@ Responsive: Desktop, Tablet, Mobile
         font-size: 0.95rem;
     }
     .faq-item[open] .faq-answer { padding-bottom: 0.95rem; }
-    .faq-section .container {
-        grid-template-columns: 1fr;
-        gap: 1.75rem;
-    }
-    .faq-intro,
-    .faq-intro .section-subtitle {
-        text-align: center;
-    }
     .contact-layout {
         grid-template-columns: 1fr;
         gap: 4rem;
