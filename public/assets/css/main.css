@@ -542,9 +542,19 @@ FAQ Section
 ################################
 */
 .faq-section { padding-bottom: 0; }
+.faq-section .container {
+    display: grid;
+    grid-template-columns: 0.35fr 0.65fr;
+    align-items: start;
+    gap: 5rem;
+}
 .faq-intro {
-    text-align: center;
-    margin-bottom: 2.5rem;
+    text-align: left;
+    margin-bottom: 0;
+}
+.faq-intro .section-subtitle {
+    text-align: left;
+    margin-bottom: 0;
 }
 .faq-list {
     width: 100%;
@@ -1214,6 +1224,14 @@ Responsive: Desktop, Tablet, Mobile
         font-size: 0.95rem;
     }
     .faq-item[open] .faq-answer { padding-bottom: 0.95rem; }
+    .faq-section .container {
+        grid-template-columns: 1fr;
+        gap: 1.75rem;
+    }
+    .faq-intro,
+    .faq-intro .section-subtitle {
+        text-align: center;
+    }
     .contact-layout {
         grid-template-columns: 1fr;
         gap: 4rem;
