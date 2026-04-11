@@ -279,7 +279,7 @@
         <div class="container">
             <h2>Ein gepflegtes Büro ist kein Zufall</h2>
             <p class="section-subtitle">
-                Ohne klare Abläufe und nachvollziehbare Umsetzung bleibt Qualität oft inkonstant – auch dann, wenn sie eigentlich erwartet wird.
+                Ohne klare Abläufe und nachvollziehbare Umsetzung wird Qualität zur Glückssache – obwohl sie eigentlich selbstverständlich sein sollte.
             </p>
             <div class="cards" role="list">
                 <div class="card reveal reveal-delay-1" role="listitem">
@@ -293,7 +293,7 @@
                     <p>Rückfragen, Nachbesserungen und Abstimmungen kosten Zeit und Aufmerksamkeit. Fehlende Struktur führt zu zusätzlichem Aufwand, der interne Ressourcen bindet und vom Kerngeschäft ablenkt.</p>                </div>
                 <div class="card reveal reveal-delay-3" role="listitem">
                     <div class="card-icon icon icon-md"><i data-feather="eye"></i></div>
-                    <h3>Kein konstant professioneller Eindruck</h3>
+                    <h3>Der erste Eindruck leidet</h3>
                     <p>Ihr Büro ist Teil Ihrer Außenwirkung. Schwankende Sauberkeit führt schnell zu einem Eindruck, der nicht Ihrer tatsächlichen Qualität entspricht – besonders gegenüber Kunden und Besuchern.</p>                </div>
             </div>
         </div>
