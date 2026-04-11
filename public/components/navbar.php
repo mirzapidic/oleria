@@ -6,9 +6,9 @@
         <i data-feather="menu"></i>
     </button>
     <ul id="main-nav">
-        <li><a href="/#problem">Problem</a></li>
-        <li><a href="/#offer">Leistung</a></li>
-        <li><a href="/#proof">Nachvollziehbarkeit</a></li>
+        <li><a href="/#problem">Herausforderungen</a></li>
+        <li><a href="/#offer">Betreuung</a></li>
+        <li><a href="/#proof">Ablauf</a></li>
         <li><a href="/#team">Team</a></li>
         <li><a href="/warum-oleria.php">Warum Oleria</a></li>
         <li><a href="/#faq">Fragen</a></li>
