@@ -126,18 +126,67 @@ document.addEventListener("DOMContentLoaded", () => {
     // ###########################################################
     // FAQ functions
     // ###########################################################
-    // Only one item open at a time in the accordion
     const faqItems = document.querySelectorAll('.faq-item');
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    function openFaqItem(item) {
+        if (item.open) return;
+
+        item.open = true;
+
+        if (prefersReducedMotion) return;
+
+        item.classList.add('is-opening');
+        requestAnimationFrame(() => {
+            item.classList.remove('is-opening');
+        });
+    }
+
+    function closeFaqItem(item) {
+        if (!item.open || item.classList.contains('is-closing')) return;
+
+        if (prefersReducedMotion) {
+            item.open = false;
+            return;
+        }
+
+        item.classList.add('is-closing');
+        const answer = item.querySelector('.faq-answer');
+        let closeTimer = null;
+
+        function handleClose(event) {
+            if (event.propertyName !== 'grid-template-rows') return;
+
+            finishClose();
+        }
+
+        function finishClose() {
+            clearTimeout(closeTimer);
+            answer.removeEventListener('transitionend', handleClose);
+            item.classList.remove('is-closing');
+            item.open = false;
+        }
+
+        answer.addEventListener('transitionend', handleClose);
+        closeTimer = setTimeout(finishClose, 350);
+    }
 
     faqItems.forEach(item => {
-        item.addEventListener('toggle', () => {
-            if (!item.open) return;
+        const summary = item.querySelector('summary');
+
+        summary.addEventListener('click', (event) => {
+            event.preventDefault();
+
+            if (item.open) {
+                closeFaqItem(item);
+                return;
+            }
 
             faqItems.forEach(otherItem => {
-                if (otherItem !== item) {
-                    otherItem.removeAttribute('open');
-                }
+                if (otherItem !== item) closeFaqItem(otherItem);
             });
+
+            openFaqItem(item);
         });
     });
 
