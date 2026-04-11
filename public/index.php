@@ -18,8 +18,11 @@
     <meta property="og:description" content="Diskrete und nachvollziehbare Büroreinigung in Graz. Klare Abläufe, dokumentierte Einsätze und verlässliche Betreuung für Unternehmen.">
     <meta property="og:image" content="https://oleria.at/assets/images/group_photo_desktop.webp">
 
-    <link rel="icon" href="/assets/images/oleria-favicon-32x32.webp" sizes="32x32">
-    <link rel="apple-touch-icon" href="/assets/images/oleria-apple-touch-icon.webp">
+    <link rel="icon" href="/assets/images/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
 
     <script type="application/ld+json">
         {
