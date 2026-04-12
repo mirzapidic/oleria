@@ -6,7 +6,7 @@
     <title>Impressum | Oleria</title>
     <meta name="description" content="Impressum von Oleria – Pidic Facility Management GmbH, Graz.">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://oleria.at/impressum.php">
+    <link rel="canonical" href="https://oleria.at/legal/impressum.php">
 
     <link rel="icon" href="/assets/images/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/android-chrome-192x192.png">
@@ -14,6 +14,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
     <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="/assets/css/main.css">
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js" defer></script>

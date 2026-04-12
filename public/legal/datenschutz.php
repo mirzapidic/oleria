@@ -7,7 +7,7 @@
     <title>Datenschutz | Oleria</title>
     <meta name="description" content="Datenschutzerklärung von Oleria.">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://oleria.at/datenschutz.php">
+    <link rel="canonical" href="https://oleria.at/legal/datenschutz.php">
 
     <link rel="icon" href="/assets/images/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/android-chrome-192x192.png">
@@ -15,6 +15,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
     <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="/assets/css/main.css">
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js" defer></script>

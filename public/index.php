@@ -16,7 +16,7 @@
     <meta property="og:type" content="website">
     <meta property="og:title" content="Büroreinigung Graz für Unternehmen | Oleria">
     <meta property="og:description" content="Diskrete und nachvollziehbare Büroreinigung in Graz. Klare Abläufe, dokumentierte Einsätze und verlässliche Betreuung für Unternehmen.">
-    <meta property="og:image" content="https://oleria.at/assets/images/group_photo_desktop.webp">
+    <meta property="og:image" content="https://oleria.at/assets/images/buero-reinigung-graz-team-oleria-desktop.webp">
 
     <link rel="icon" href="/assets/images/favicon.ico" sizes="any">
     <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/android-chrome-192x192.png">
@@ -24,6 +24,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
     <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#ffffff">
 
     <script type="application/ld+json">
         {
@@ -255,7 +256,7 @@
         }
     </script>
 
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js" defer></script>
     <script src="/assets/js/main.js" defer></script>
 </head>
