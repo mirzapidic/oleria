@@ -486,12 +486,10 @@
     </section>
     <section class="section section-white faq-section" id="faq">
         <div class="container ">
-            <div class="faq-intro">
-                <h2>Häufige Fragen</h2>
-                <p class="section-subtitle">
-                    Alles, was vor dem Start wichtig ist – klar beantwortet.
-                </p>
-            </div>
+            <h2>Häufige Fragen</h2>
+            <p class="section-subtitle">
+                Alles, was vor dem Start wichtig ist – klar beantwortet.
+            </p>
             <div class="faq-list">
                 <details class="faq-item">
                     <summary>

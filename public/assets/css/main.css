@@ -552,10 +552,6 @@ FAQ Section
 ################################
 */
 .faq-section { padding-bottom: 0; }
-.faq-intro {
-    text-align: center;
-    margin-bottom: 2.5rem;
-}
 .faq-list {
     width: 50%;
     margin: 0 auto;
@@ -1215,7 +1211,6 @@ Responsive: Desktop, Tablet, Mobile
         margin: 0 auto;
     }
     .proof-image-placeholder { height: 180px; }
-    .faq-intro { margin-bottom: 1.75rem; }
     .faq-list { width: 100%; }
     .faq-item summary {
         padding: 0.9rem 0;
