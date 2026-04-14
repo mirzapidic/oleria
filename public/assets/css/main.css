@@ -1325,7 +1325,7 @@ Responsive: Desktop, Tablet, Mobile
     .btn {
         font-size: max(1.4vw, 1.4vh);
     }
-    .contact-benefit strong { font-size: max(1.4vw, 1.4vh); }
+    .contact-benefit strong { font-size: max(1.8vw, 1.8vh); }
     .closing-contact-intro { font-size: max(1.9vw, 1.9vh); }
     .why-oleria-content h2 { margin-bottom: 1.2rem; }
     .footer-column h4,
