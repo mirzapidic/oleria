@@ -276,6 +276,7 @@ Problem Section
     box-sizing: border-box;
     transition: box-shadow 0.25s ease, border-color 0.25s ease;
 }
+#problem .card p { margin-bottom: 0; }
 .card-icon {
     font-size: 2rem;
     color: #7fd1d3;
@@ -1275,62 +1276,64 @@ Responsive: Desktop, Tablet, Mobile
 
 /* ===== Mobile ===== */
 @media (max-width: 580px) {
-    h3 { font-size: max(1.7vw, 1.7vh); }
+    h1 { font-size: max(3.2vw, 3.2vh); }
+    h3 { font-size: max(1.8vw, 1.8vh); }
+    .article-header h1 { font-size: 2.55rem; }
     p,
     span,
     a,
     li,
     nav ul li a {
-        font-size: max(1.5vw, 1.5vh);
+        font-size: max(1.6vw, 1.6vh);
     }
     header { padding: 5rem 0 2.5rem 0; }
     .hero-shell { padding: 0 4%; }
-    .hero-subline { font-size: 1.45rem; }
+    .hero-subline { font-size: 1.55rem; }
     .hero-qualifier {
-        font-size: 1rem;
+        font-size: 1.05rem;
         margin-bottom: 1.6rem;
     }
     .section-subtitle,
     .offer-description {
-        font-size: max(1.7vw, 1.7vh);
+        font-size: max(1.8vw, 1.8vh);
     }
     .offer-highlight-title,
     .offer-highlight-text strong {
-        font-size: max(1.5vw, 1.5vh);
+        font-size: max(1.6vw, 1.6vh);
     }
     .info-box-kicker,
     input,
     textarea,
     label,
     .btn {
-        font-size: max(1.3vw, 1.3vh);
+        font-size: max(1.4vw, 1.4vh);
     }
-    .contact-benefit strong { font-size: max(1.3vw, 1.3vh); }
-    .closing-contact-intro { font-size: max(1.8vw, 1.8vh); }
+    .contact-benefit strong { font-size: max(1.4vw, 1.4vh); }
+    .closing-contact-intro { font-size: max(1.9vw, 1.9vh); }
     .why-oleria-content h2 { margin-bottom: 1.2rem; }
     .footer-column h4,
     .footer-bottom {
-        font-size: max(1.5vw, 1.5vh);
+        font-size: max(1.6vw, 1.6vh);
     }
 }
 @media (max-width: 480px) {
-    html { font-size: 15px; }
+    html { font-size: 16px; }
     .container {
         max-width: 96%;
         padding: 0 8px;
     }
     .btn { padding: 0.65rem 1.1rem; }
     .offer-bg-section { min-height: auto; }
-    .offer-bg-content h2 { font-size: 1.5rem; }
+    .offer-bg-content h2 { font-size: 1.6rem; }
     .offer-description {
-        font-size: 0.95rem;
+        font-size: 1rem;
         margin-bottom: 2rem;
     }
-    .offer-highlight-text p { font-size: 0.9rem; }
+    .offer-highlight-text p { font-size: 0.95rem; }
     .proof-step { max-width: 80%; }
     .proof-image-placeholder {
         height: 150px;
-        font-size: 0.8rem;
+        font-size: 0.85rem;
     }
     .proof-flow {
         margin: 1rem auto;
@@ -1344,22 +1347,22 @@ Responsive: Desktop, Tablet, Mobile
 }
 @media (max-width: 400px) and (max-height: 900px) {
     header { padding: 3rem 0 1.5rem 0; }
-    .hero-subline { font-size: 1.5rem; }
+    .hero-subline { font-size: 1.6rem; }
     .hero-qualifier {
-        font-size: 1.2rem;
+        font-size: 1.25rem;
         margin-bottom: 1.5rem;
     }
 }
 @media (max-width: 400px) and (max-height: 700px) {
     header { padding: 2rem 0 1.3rem 0; }
-    .hero-subline { font-size: 1.3rem; }
+    .hero-subline { font-size: 1.4rem; }
     .hero-qualifier {
-        font-size: 1rem;
+        font-size: 1.05rem;
         margin-bottom: 1rem;
     }
 }
 @media (max-width: 360px) {
-    html { font-size: 14px; }
+    html { font-size: 15px; }
 }
 
 /* ===== User Preferences ===== */
