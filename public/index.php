@@ -266,7 +266,11 @@
     <header id="hero">
         <div class="hero-shell">
             <div class="hero-copy">
-                <p class="hero-brand-line">Diskret. Nachvollziehbar. Verlässlich.</p>
+                <p class="hero-brand-line">
+                    <span>Diskret.</span>
+                    <span>Nachvollziehbar.</span>
+                    <span>Verlässlich.</span>
+                </p>
                 <p class="hero-subline">Reinigung mit System, Kontrolle und dokumentierten Einsätzen</p>
                 <h1 class="hero-qualifier">Büroreinigung in Graz für Unternehmen – gepflegter Standard ohne laufende Abstimmung und Nachkontrolle</h1>
                 <div class="hero-actions">

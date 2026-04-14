@@ -185,6 +185,10 @@ header {
     z-index: 2;
     position: relative;
 }
+.hero-brand-line span {
+    display: block;
+    font: inherit;
+}
 .hero-copy p {
     margin-bottom: 2rem;
     position: relative;
