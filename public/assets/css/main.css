@@ -1,4 +1,7 @@
-:root { --nav-height: 6dvh; }
+:root { --nav-height: 6vh; }
+@supports (height: 100svh) {
+    :root { --nav-height: 6svh; }
+}
 body {
     font-family: Inter, Roboto, "Open Sans", Arial, sans-serif;
     color: #0f2a44;
@@ -108,9 +111,12 @@ nav {
     box-sizing: border-box;
 }
 .logo img {
-    max-height: 4dvh;
+    max-height: 4vh;
     width: auto;
     display: block;
+}
+@supports (height: 100svh) {
+    .logo img { max-height: 4svh; }
 }
 nav .logo { display: flex; align-items: center; max-height: 50%; }
 nav ul {
@@ -1099,7 +1105,7 @@ Responsive: Desktop, Tablet, Mobile
         background:
                 linear-gradient(to bottom, rgba(10, 37, 64, 0.25), rgba(10, 37, 64, 0)),
                 url('../images/buero-reinigung-graz-team-oleria-mobile.webp') center center / cover no-repeat;
-        height: calc(100dvh - var(--nav-height));
+        height: calc(100svh - var(--nav-height));
         min-height: 0;
         display: flex;
         align-items: flex-start;
@@ -1193,7 +1199,7 @@ Responsive: Desktop, Tablet, Mobile
     #team .section-subtitle {
         text-align: center;
     }
-    .offer-bg-section {  min-height: 100dvh; }
+    .offer-bg-section {  min-height: 100svh; }
     .offer-bg-content { max-width: 96%; }
     .offer-bg-content h2 { font-size: 1.8rem; }
     .offer-description { font-size: 1rem; }
