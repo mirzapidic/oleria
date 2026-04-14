@@ -1163,6 +1163,7 @@ Responsive: Desktop, Tablet, Mobile
         opacity: 1;
         pointer-events: all;
     }
+    nav ul li { width: 100%; }
     nav ul li a {
         padding: 0.5rem 0.25rem;
         width: 100%;
