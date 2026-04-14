@@ -1278,7 +1278,8 @@ Responsive: Desktop, Tablet, Mobile
 }
 @media (max-width: 640px) {
     .why-block-highlight { padding: 1.2rem; }
-    .contact-benefit { padding: 1rem 0 0; }
+    .closing-contact-intro { margin-bottom: 1.25rem; }
+    .contact-benefit { padding: 0; }
     form,
     .info-box {
         padding: 1.35rem;
@@ -1330,6 +1331,11 @@ Responsive: Desktop, Tablet, Mobile
     label,
     .btn {
         font-size: max(1.4vw, 1.4vh);
+    }
+    label,
+    input::placeholder,
+    textarea::placeholder {
+        font-size: max(1.55vw, 1.55vh);
     }
     .contact-benefit strong { font-size: max(1.8vw, 1.8vh); }
     .closing-contact-intro { font-size: max(1.9vw, 1.9vh); }
