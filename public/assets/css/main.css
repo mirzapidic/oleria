@@ -1278,7 +1278,8 @@ Responsive: Desktop, Tablet, Mobile
     p,
     span,
     a,
-    li {
+    li,
+    nav ul li a {
         font-size: max(1.5vw, 1.5vh);
     }
     header { padding: 5rem 0 2.5rem 0; }
