@@ -37,6 +37,9 @@
                     "alternateName": "Pidic Facility Management GmbH",
                     "legalName": "Pidic Facility Management GmbH",
                     "url": "https://oleria.at/",
+                    "sameAs": [
+                        "https://maps.app.goo.gl/MtcX51vNgZzptKtq5"
+                    ],
                     "email": "office@oleria.at",
                     "telephone": "+436765320111",
                     "description": "Oleria bietet Büroreinigung in Graz für Unternehmen. Der Fokus liegt auf diskreter, nachvollziehbarer und verlässlicher Reinigung mit klaren Abläufen, dokumentierten Einsätzen und vollständiger Betreuung.",

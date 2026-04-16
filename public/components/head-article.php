@@ -72,12 +72,18 @@
                     'author' => [
                             '@type' => 'Organization',
                             '@id' => 'https://oleria.at/#localbusiness',
-                            'name' => 'Oleria'
+                            'name' => 'Oleria',
+                            'sameAs' => [
+                                    'https://maps.app.goo.gl/MtcX51vNgZzptKtq5'
+                            ]
                     ],
                     'publisher' => [
                             '@type' => 'Organization',
                             '@id' => 'https://oleria.at/#localbusiness',
                             'name' => 'Oleria',
+                            'sameAs' => [
+                                    'https://maps.app.goo.gl/MtcX51vNgZzptKtq5'
+                            ],
                             'logo' => [
                                     '@type' => 'ImageObject',
                                     '@id' => 'https://oleria.at/#logo',
