@@ -98,11 +98,7 @@
                 <h3>3.1</h3>
                 <div class="legal-subsection-body">
                     <p>
-                        Sofern nicht eine einmalige Dienstleistungserbringung oder eine bestimmte Laufzeit ausdrücklich vereinbart
-                        wird, wird der Dienstleistungsvertrag auf unbestimmte Zeit abgeschlossen. Der auf unbestimmte Zeit
-                        abgeschlossene Dienstleistungsvertrag kann von jedem Vertragspartner unter Einhaltung einer
-                        Kündigungsfrist von 4 Wochen, jeweils zum 15 eines Monats oder zum Monatsletzten, schriftlich (ohne
-                        Angabe von Gründen) gekündigt werden.
+                        Sofern nicht eine einmalige Dienstleistungserbringung oder eine bestimmte Laufzeit ausdrücklich vereinbart wird, wird der Dienstleistungsvertrag auf unbestimmte Zeit abgeschlossen. Der auf unbestimmte Zeit abgeschlossene Dienstleistungsvertrag kann von jedem Vertragspartner schriftlich (ohne Angabe von Gründen) zum Ende eines Kalendermonats gekündigt werden. Die Kündigungsfrist beträgt bis zum Ende des auf die Kündigung folgenden Kalendermonats.
                     </p>
                 </div>
             </div>
